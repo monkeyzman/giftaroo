@@ -23,8 +23,12 @@ Both live in **one config file**: [`js/config.js`](js/config.js).
 window.WRAPT_CONFIG = {
   brandName: "Giftaroo",       // change this to your name
   affiliateTag: "giftaroo-20", // replace with your Amazon Associates tag
+  christmasMode: true,         // snow, holiday wrap, countdown, Secret Santa
+  lastShipDate: "2026-12-18",  // last Amazon standard-shipping day before Christmas
 };
 ```
+
+Set `christmasMode` to `false` to hide the snow, holiday wrapping paper, shipping countdown, and Secret Santa button. Gender filtering and share links stay on.
 
 That’s it. The logo, page title, and every Amazon link (`https://www.amazon.com/dp/ASIN?tag=YOURTAG`) read from those two constants. After Amazon approves your Associates account, paste your tag (it usually looks like `yourstore-20`) and redeploy.
 
@@ -37,6 +41,7 @@ Curated products live in [`data/products.json`](data/products.json). Each item h
 - `asin` — a real Amazon ASIN (not invented)
 - `name`, `approxPrice`, `budget` (`15` / `25` / `50` / `100`)
 - `vibes` and `recipients` used for matching
+- `gender` — `him`, `her`, or `unisex`. “For him” uses him + unisex. “For her” uses her + unisex. Neutral gifts stay `unisex`.
 - `why` — a short “why it’s fun” line
 - `image` — an Amazon product-image URL (the site also tries a backup image URL)
 
@@ -79,10 +84,13 @@ In the repo, **Settings → Pages** must use source **GitHub Actions** (not “D
 ## What’s in this version
 
 - Budgets: $15 / $25 / $50 / $100
+- For him / For her / Anyone (him + unisex, her + unisex, or the whole catalog)
 - Recipients: me, friend, partner, kid, parent, coworker
 - Vibes: gamer, cozy, foodie, tech, outdoors, collector, beauty, surprise me
 - Gift-box unwrap (shake + lid + confetti)
 - One free reroll per round
+- “Send the surprise” builds a link (`#gift=ASIN&from=…&note=…`) and uses the Web Share API, with copy-link as the fallback. Opening the link plays the unwrap for that gift, then offers “Make your own mystery gift.”
+- Christmas mode (on by default): light snow, holiday wrap, a countdown to `lastShipDate`, and a Secret Santa preset with $20 and $25 limits
 - Mobile-first layout that also looks good centered on a desktop
 
 ## Project layout

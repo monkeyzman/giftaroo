@@ -15,6 +15,7 @@
 <body>
   <a class="skip-link" href="#app">Skip to content</a>
   <div class="page-bg" aria-hidden="true"></div>
+  <div class="snow" id="snow" hidden aria-hidden="true"></div>
   <div class="app" id="app">
     <header class="topbar">
       <button type="button" class="brand" id="brandBtn" aria-label="Back to home">
@@ -24,12 +25,15 @@
     </header>
 
     <main>
+      <p class="ship-banner" id="shipBanner" hidden></p>
       <!-- HOME -->
       <section class="view view-home is-active" id="view-home" aria-label="Home">
         <p class="eyebrow">Mystery gifts, unwrapped</p>
         <h1>A little mystery.<br />A lot of delight.</h1>
-        <p class="lede">Pick a budget, who it’s for, and a vibe. We’ll wrap a real Amazon gift — you tap to reveal it.</p>
+        <p class="lede">Pick a budget, who it’s for, and a vibe. For him, for her, or anyone — then tap to unwrap a real Amazon gift.</p>
+        <p class="share-miss" id="shareMiss" hidden>That surprise link doesn’t match a gift we have. Make your own instead.</p>
         <button type="button" class="btn btn-primary" id="startBtn">Unwrap a gift</button>
+        <button type="button" class="btn btn-secondary btn-santa" id="secretSantaBtn" hidden>Secret Santa</button>
         <ol class="how">
           <li><span>1</span>Choose a budget and a vibe</li>
           <li><span>2</span>Tap the box to unwrap it</li>
@@ -39,12 +43,13 @@
 
       <!-- QUIZ -->
       <section class="view" id="view-quiz" aria-label="Gift details" hidden>
-        <div class="progress" aria-hidden="true">
+        <div class="progress" id="progress" aria-hidden="true">
           <span class="dot is-on" data-step-dot="1"></span>
           <span class="dot" data-step-dot="2"></span>
           <span class="dot" data-step-dot="3"></span>
+          <span class="dot" data-step-dot="4"></span>
         </div>
-        <p class="step-kicker" id="stepKicker">Step 1 of 3</p>
+        <p class="step-kicker" id="stepKicker">Step 1 of 4</p>
         <h2 id="stepTitle">What’s the budget?</h2>
         <p class="step-sub" id="stepSub">Prices are approximate and can change.</p>
         <div class="choices" id="choices" role="group" aria-labelledby="stepTitle"></div>
@@ -56,9 +61,10 @@
 
       <!-- WRAP -->
       <section class="view view-wrap" id="view-wrap" aria-label="Wrapped gift" hidden>
-        <p class="eyebrow">Your mystery gift is ready</p>
-        <h2>Tap to unwrap</h2>
+        <p class="eyebrow" id="wrapEyebrow">Your mystery gift is ready</p>
+        <h2 id="wrapTitle">Tap to unwrap</h2>
         <p class="wrap-meta" id="wrapMeta"></p>
+        <p class="share-note" id="wrapNote" hidden></p>
         <button type="button" class="gift-hit" id="giftHit" aria-label="Unwrap your mystery gift">
           <div class="gift" id="gift">
             <div class="gift-shadow"></div>
@@ -79,7 +85,8 @@
 
       <!-- REVEAL -->
       <section class="view view-reveal" id="view-reveal" aria-label="Gift reveal" hidden>
-        <p class="eyebrow reveal-kicker">You unwrapped…</p>
+        <p class="eyebrow reveal-kicker" id="revealKicker">You unwrapped…</p>
+        <p class="share-note" id="revealNote" hidden></p>
         <article class="product" id="productCard">
           <div class="product-image-wrap">
             <img id="productImage" alt="" width="400" height="400" referrerpolicy="no-referrer" />
@@ -90,7 +97,21 @@
           <p class="product-why" id="productWhy"></p>
         </article>
         <a class="btn btn-primary btn-amazon" id="amazonBtn" target="_blank" rel="noopener noreferrer sponsored">Get it on Amazon</a>
+        <button type="button" class="btn btn-secondary" id="shareBtn">Send the surprise</button>
+        <div class="share-sheet" id="shareSheet" hidden>
+          <p class="share-title">Send the surprise</p>
+          <label class="field">Your name <span>(optional)</span>
+            <input id="shareFrom" maxlength="40" autocomplete="name" placeholder="Alex" />
+          </label>
+          <label class="field">A note <span>(optional)</span>
+            <input id="shareNote" maxlength="140" placeholder="Open this on Christmas" />
+          </label>
+          <button type="button" class="btn btn-primary" id="shareGoBtn">Share link</button>
+          <p class="share-status" id="shareStatus" role="status"></p>
+          <input class="share-url" id="shareUrl" readonly hidden aria-label="Surprise link" />
+        </div>
         <button type="button" class="btn btn-secondary" id="rerollBtn">Try one more (free reroll)</button>
+        <button type="button" class="btn btn-secondary" id="makeOwnBtn" hidden>Make your own mystery gift</button>
         <button type="button" class="btn btn-ghost" id="againBtn">Start over</button>
       </section>
     </main>
