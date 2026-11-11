@@ -15,6 +15,7 @@
       "partner",
       "parent"
     ],
+    "gender": "her",
     "why": "A cult-favorite overnight mask that leaves lips soft by morning.",
     "image": "assets/products/B07XXPHQZK.jpg"
   },
@@ -33,6 +34,7 @@
       "friend",
       "partner"
     ],
+    "gender": "her",
     "why": "The famous Laneige lip mask in a playful gummy-bear flavor.",
     "image": "assets/products/B09HN5CMBX.jpg"
   },
@@ -50,6 +52,7 @@
       "friend",
       "partner"
     ],
+    "gender": "her",
     "why": "A TSA-friendly trio for sensitive skin, ready to toss in a bag.",
     "image": "assets/products/B0G8SYD5B6.jpg"
   },
@@ -67,6 +70,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A clarifying reset that washes away buildup and smells like a fancy salon.",
     "image": "assets/products/B084C2PC69.jpg"
   },
@@ -85,6 +89,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A sandalwood-and-vetiver wash that makes an everyday shower feel special.",
     "image": "assets/products/B0C23Q2H61.jpg"
   },
@@ -102,6 +107,7 @@
       "friend",
       "partner"
     ],
+    "gender": "her",
     "why": "A lightweight glow oil that hydrates and smells like a treat.",
     "image": "assets/products/B0DZHZV8N9.jpg"
   },
@@ -119,6 +125,7 @@
       "friend",
       "partner"
     ],
+    "gender": "her",
     "why": "A volumizing trio for root lift, texture, and good-hair-day energy.",
     "image": "assets/products/B0FL51LHF9.jpg"
   },
@@ -136,6 +143,7 @@
       "friend",
       "partner"
     ],
+    "gender": "her",
     "why": "The nearly-universal tint people keep borrowing — and never giving back.",
     "image": "assets/products/B0032RMX3U.jpg"
   },
@@ -154,6 +162,7 @@
       "friend",
       "partner"
     ],
+    "gender": "her",
     "why": "A chilly face roller that feels like a mini spa after a long day.",
     "image": "assets/products/B0C69YLVYK.jpg"
   },
@@ -172,6 +181,7 @@
       "partner",
       "coworker"
     ],
+    "gender": "her",
     "why": "A simple, inexpensive ice roller for morning puffiness.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B07DDCCLX8.01._SCLZZZZZZZ_.jpg"
   },
@@ -189,6 +199,7 @@
       "friend",
       "partner"
     ],
+    "gender": "her",
     "why": "One clever beauty tool that replaces a handful of little gadgets.",
     "image": "assets/products/B0BD48FGBC.jpg"
   },
@@ -208,6 +219,7 @@
       "partner",
       "coworker"
     ],
+    "gender": "her",
     "why": "A classic rosewater mist for a quick, refreshing glow.",
     "image": "assets/products/B002LC9OES.jpg"
   },
@@ -226,6 +238,7 @@
       "partner",
       "coworker"
     ],
+    "gender": "her",
     "why": "A tiny, affordable eye gel that actually feels like a wake-up call.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B091NJQ29P.01._SCLZZZZZZZ_.jpg"
   },
@@ -246,6 +259,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "A giftable tin of lip balm and skin-care staples almost anyone will use.",
     "image": "assets/products/B00VK5SG46.jpg"
   },
@@ -263,6 +277,7 @@
       "friend",
       "partner"
     ],
+    "gender": "her",
     "why": "A travel set of the buzzy Beija Flor scent — sunny, sweet, and share-worthy.",
     "image": "assets/products/B0BZWWB6FB.jpg"
   },
@@ -280,6 +295,7 @@
       "friend",
       "partner"
     ],
+    "gender": "her",
     "why": "The viral body mist that smells like a vacation in a bottle.",
     "image": "assets/products/B09X3HB2BR.jpg"
   },
@@ -298,6 +314,7 @@
       "friend",
       "partner"
     ],
+    "gender": "her",
     "why": "A luxe, aromatic body oil that turns getting ready into a ritual.",
     "image": "assets/products/B07DDRT223.jpg"
   },
@@ -315,6 +332,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A spa-like body cleanser that feels a step above everyday soap.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B0CZM131X1.01._SCLZZZZZZZ_.jpg"
   },
@@ -333,6 +351,7 @@
       "friend",
       "partner"
     ],
+    "gender": "her",
     "why": "Overnight waves without the heat damage — easy and actually pretty.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B0CCSRSGVD.01._SCLZZZZZZZ_.jpg"
   },
@@ -350,6 +369,7 @@
       "friend",
       "partner"
     ],
+    "gender": "her",
     "why": "Everyday gold-look earrings that dress up an outfit without the splurge.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B0C8BLNQW6.01._SCLZZZZZZZ_.jpg"
   },
@@ -368,6 +388,7 @@
       "friend",
       "partner"
     ],
+    "gender": "her",
     "why": "A compact lighted mirror that makes travel (or dim bathrooms) easier.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B08Z7HTHJD.01._SCLZZZZZZZ_.jpg"
   },
@@ -386,6 +407,7 @@
       "friend",
       "partner"
     ],
+    "gender": "her",
     "why": "Mulberry-silk scrunchies that are gentler on hair and secretly luxurious.",
     "image": "assets/products/B0BSLX4GRT.jpg"
   },
@@ -405,6 +427,7 @@
       "coworker",
       "parent"
     ],
+    "gender": "unisex",
     "why": "The chic, great-smelling alternative to a bulky sanitizer bottle.",
     "image": "assets/products/B0GV63HYNJ.jpg"
   },
@@ -424,6 +447,7 @@
       "partner",
       "parent"
     ],
+    "gender": "her",
     "why": "A satin pillowcase that’s kinder to hair and skin, and looks a little fancy.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B08611589P.01._SCLZZZZZZZ_.jpg"
   },
@@ -444,6 +468,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "Drop one in the shower and the bathroom turns into a tiny spa.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B0B9X4GD1N.01._SCLZZZZZZZ_.jpg"
   },
@@ -462,6 +487,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A bright citrus-and-passion-fruit candle in a glossy jar made for display.",
     "image": "assets/products/B0DSWZMB1T.jpg"
   },
@@ -480,6 +506,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "Candles timed for a short wind-down, so the evening actually stays calm.",
     "image": "assets/products/B09HQ6CSBY.jpg"
   },
@@ -498,6 +525,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A state-scented candle that smells like home — in the best way.",
     "image": "assets/products/B08HJQVB1J.jpg"
   },
@@ -516,6 +544,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A handsome, long-burning candle that makes a room feel instantly dressed.",
     "image": "assets/products/B08L9P8S9C.jpg"
   },
@@ -534,6 +563,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "Melt a favorite jar candle with a warm lamp — no open flame required.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B0CTJGJL2T.01._SCLZZZZZZZ_.jpg"
   },
@@ -552,6 +582,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A pretty warmer lamp that turns any jar candle into ambient lighting.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B09FYZ7162.01._SCLZZZZZZZ_.jpg"
   },
@@ -571,6 +602,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "A refillable electric lighter — no more digging for matches.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B095JZTMGX.01._SCLZZZZZZZ_.jpg"
   },
@@ -589,6 +621,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A little ceramic match striker that looks charming on a shelf.",
     "image": "assets/products/B0C65DBXJ5.jpg"
   },
@@ -607,6 +640,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "Matches under a glass cloche — practical fire-starting that looks styled.",
     "image": "assets/products/B0CVY1RV9N.jpg"
   },
@@ -626,6 +660,7 @@
       "partner",
       "kid"
     ],
+    "gender": "unisex",
     "why": "A deadpan little duck lamp with serious personality.",
     "image": "assets/products/B09YRR2LS5.jpg"
   },
@@ -645,6 +680,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A cute potato lamp that makes a desk or nightstand instantly friendlier.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B0DF9MRNG6.01._SCLZZZZZZZ_.jpg"
   },
@@ -663,6 +699,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "Soft modal pajamas that make staying in feel like a real plan.",
     "image": "assets/products/B0GJ75MCXH.jpg"
   },
@@ -681,6 +718,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "Floofy, ridiculous, extremely comfortable slippers.",
     "image": "assets/products/B0DR3NGQWB.jpg"
   },
@@ -699,6 +737,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "Cloud-soft memory-foam slippers for cold floors and slow mornings.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B0CCCV8XZJ.01._SCLZZZZZZZ_.jpg"
   },
@@ -718,6 +757,7 @@
       "parent",
       "kid"
     ],
+    "gender": "unisex",
     "why": "A wearable blanket for movie nights when a regular throw isn’t enough.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B075RYLCZF.01._SCLZZZZZZZ_.jpg"
   },
@@ -737,6 +777,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A packable, camping-grade puffy blanket that’s just as good on the couch.",
     "image": "assets/products/B0HF9N2J2S.jpg"
   },
@@ -757,6 +798,7 @@
       "partner",
       "kid"
     ],
+    "gender": "unisex",
     "why": "Part hoodie, part sleeping bag — a next-level couch-cocoon.",
     "image": "assets/products/B095LDHJ74.jpg"
   },
@@ -776,6 +818,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "Gentle sleep sounds for better nights, in a simple little machine.",
     "image": "assets/products/B00A2JBMRE.jpg"
   },
@@ -795,6 +838,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A clip-on reading light with warm settings — bedtime pages, no glare.",
     "image": "assets/products/B0F1G1X8MK.jpg"
   },
@@ -813,6 +857,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A slim bookmark light that slips into any book or Kindle case.",
     "image": "assets/products/B09PR1BTM7.jpg"
   },
@@ -832,6 +877,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "An affordable little book light for late-night chapters.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B0CFVPVQ23.01._SCLZZZZZZZ_.jpg"
   },
@@ -851,6 +897,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A sturdy stand that keeps a cookbook or novel open while you use both hands.",
     "image": "assets/products/B002YO3ZZM.jpg"
   },
@@ -870,6 +917,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "Color-changing smart lights that make a room feel like a movie set.",
     "image": "assets/products/B0B2KY8X4M.jpg"
   },
@@ -889,6 +937,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A quiet diffuser with soft color lights for calmer evenings.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B01MR4Y0CZ.01._SCLZZZZZZZ_.jpg"
   },
@@ -908,6 +957,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A lined TNF beanie that’s actually warm, not just logo-warm.",
     "image": "assets/products/B0FX3JQ1XX.jpg"
   },
@@ -928,6 +978,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "A tough, classic beanie that pretty much anyone will wear all winter.",
     "image": "assets/products/B002G9UEFY.jpg"
   },
@@ -948,6 +999,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "A beanie with a built-in light for late dog walks or looking under the sink.",
     "image": "assets/products/B07YNCY36R.jpg"
   },
@@ -966,6 +1018,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A merino crew-neck that looks polished and feels like a holiday hug.",
     "image": "assets/products/B0H34FH728.jpg"
   },
@@ -983,6 +1036,7 @@
       "friend",
       "partner"
     ],
+    "gender": "her",
     "why": "An easy, oversized cotton shirt that’s equal parts cozy and put-together.",
     "image": "assets/products/B0GFGT4847.jpg"
   },
@@ -1001,6 +1055,7 @@
       "partner",
       "parent"
     ],
+    "gender": "him",
     "why": "The everyday zip hoodie people actually live in.",
     "image": "assets/products/B00JUM59Z0.jpg"
   },
@@ -1021,6 +1076,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "Warm gloves you can actually use a phone in, without taking them off.",
     "image": "assets/products/B081F74LRM.jpg"
   },
@@ -1040,6 +1096,7 @@
       "partner",
       "parent"
     ],
+    "gender": "him",
     "why": "Leather gloves with wool lining and touchscreen fingertips — genuinely luxe.",
     "image": "assets/products/B0D7NK9CQT.jpg"
   },
@@ -1061,6 +1118,7 @@
       "coworker",
       "kid"
     ],
+    "gender": "unisex",
     "why": "Twelve dessert-inspired cocoa cups, ready for a cozy night in.",
     "image": "assets/products/B0F5JY9F1T.jpg"
   },
@@ -1080,6 +1138,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "A classic mixed chocolate box that still feels like a real treat.",
     "image": "assets/products/B01BDI89SW.jpg"
   },
@@ -1098,6 +1157,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "Maple syrup aged with whiskey-barrel character — pancakes, upgraded.",
     "image": "assets/products/B088MCPGTH.jpg"
   },
@@ -1117,6 +1177,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A stone-ground chocolate sampler that’s perfect for grown-up cocoa.",
     "image": "assets/products/B0088OSAZ2.jpg"
   },
@@ -1136,6 +1197,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A simple, beautiful teapot that makes loose-leaf tea feel ceremonial.",
     "image": "assets/products/B0007WTBQ0.jpg"
   },
@@ -1155,6 +1217,7 @@
       "partner",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "The classic Anthora-style coffee cup, for people who romanticize mornings.",
     "image": "assets/products/B0017YZAYO.jpg"
   },
@@ -1175,6 +1238,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "Big, handsome ceramic mugs made for slow coffee and both hands.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B0FC2LFYFR.01._SCLZZZZZZZ_.jpg"
   },
@@ -1193,6 +1257,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "The zesting tool chefs actually recommend — lemon, cheese, chocolate, done.",
     "image": "assets/products/B00151WA06.jpg"
   },
@@ -1211,6 +1276,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "The iconic aluminum scoop that releases a perfect sphere every time.",
     "image": "assets/products/B0002U34EW.jpg"
   },
@@ -1229,6 +1295,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "Little helper grips that make draining a huge pot of pasta much less scary.",
     "image": "assets/products/B00JVPXOR6.jpg"
   },
@@ -1247,6 +1314,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A chainmail scrubber that knocks burnt bits off cast iron like nothing else.",
     "image": "assets/products/B00JCER6U2.jpg"
   },
@@ -1265,6 +1333,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A stylish oil dispenser that makes a kitchen counter look intentional.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B0BCNX6WSM.01._SCLZZZZZZZ_.jpg"
   },
@@ -1283,6 +1352,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "The internet-famous chopper that turns dinner prep into a few presses.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B0764HS4SL.01._SCLZZZZZZZ_.jpg"
   },
@@ -1301,6 +1371,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A compact blender set for smoothies, sauces, and small-kitchen wins.",
     "image": "assets/products/B012T634SM.jpg"
   },
@@ -1320,6 +1391,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A fondue pot for a playful, shareable night in.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B0B785V2NF.01._SCLZZZZZZZ_.jpg"
   },
@@ -1340,6 +1412,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "A tiny frother that makes weekday coffee feel café-adjacent.",
     "image": "assets/products/B09TT9TFSN.jpg"
   },
@@ -1360,6 +1433,7 @@
       "parent",
       "kid"
     ],
+    "gender": "unisex",
     "why": "A mini donut maker that’s half breakfast, half event.",
     "image": "assets/products/B087RQZ3GH.jpg"
   },
@@ -1378,6 +1452,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "Stuffed waffles, like a funnel-cake booth, without leaving the kitchen.",
     "image": "assets/products/B087QRK33P.jpg"
   },
@@ -1399,6 +1474,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "A mug-and-warmer set that keeps coffee hot through the whole meeting.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B07G9J4745.01._SCLZZZZZZZ_.jpg"
   },
@@ -1418,6 +1494,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "The cult-favorite travel coffee maker that brew-nerds swear by.",
     "image": "assets/products/B0047BIWSK.jpg"
   },
@@ -1437,6 +1514,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "Grind, brew, and drink from one compact pour-over system.",
     "image": "assets/products/B00VRYMTR0.jpg"
   },
@@ -1456,6 +1534,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A precise electric kettle with temperature presets for tea and pour-over.",
     "image": "assets/products/B003KYSLNQ.jpg"
   },
@@ -1474,6 +1553,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A workhorse Dutch oven for stews, bread, and holiday hosting.",
     "image": "assets/products/B0G1LQCMXK.jpg"
   },
@@ -1492,6 +1572,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A gorgeous carbon-steel pan that gets better the more you cook in it.",
     "image": "assets/products/B0D2FZW8ZW.jpg"
   },
@@ -1510,6 +1591,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A sculptural Italian ice bucket that makes even soda feel festive.",
     "image": "assets/products/B0FS5Y136T.jpg"
   },
@@ -1529,6 +1611,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A well-designed butter dish that’s nicer than it has any right to be.",
     "image": "assets/products/B0F3TZDRZ2.jpg"
   },
@@ -1548,6 +1631,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A classic enamel jug that looks at home on a farm table or a bar cart.",
     "image": "assets/products/B0FGQQDKFV.jpg"
   },
@@ -1566,6 +1650,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A handsome salt cellar that keeps a pinch of salt right where you cook.",
     "image": "assets/products/B0DKMJS214.jpg"
   },
@@ -1584,6 +1669,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A complete cheese-board set for the person who always hosts.",
     "image": "assets/products/B07DL7ZV31.jpg"
   },
@@ -1603,6 +1689,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A boxed set of grilling spices for the backyard cook.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B083C4TBT5.01._SCLZZZZZZZ_.jpg"
   },
@@ -1622,6 +1709,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A bristle-free grill cleaner that actually works (and feels thoughtful).",
     "image": "assets/products/B08DM4NFNC.jpg"
   },
@@ -1641,6 +1729,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "The weeknight hero that turns tough recipes into a button press.",
     "image": "assets/products/B00FLYWNYQ.jpg"
   },
@@ -1660,6 +1749,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "A portable warmer so leftover lunch actually arrives hot.",
     "image": "assets/products/B09BDG5RP3.jpg"
   },
@@ -1680,6 +1770,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "A legendary food jar that keeps soup hot for hours.",
     "image": "assets/products/B009QYC74S.jpg"
   },
@@ -1700,6 +1791,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "A leak-resistant travel mug from the brand coffee people trust.",
     "image": "assets/products/B00HYOGUKY.jpg"
   },
@@ -1718,6 +1810,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A practical cookbook for the ‘what’s for dinner?’ crowd.",
     "image": "assets/products/0593836324.jpg"
   },
@@ -1736,6 +1829,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A fun cookbook built around Trader Joe’s finds — gift and a grocery list.",
     "image": "assets/products/1646040473.jpg"
   },
@@ -1756,6 +1850,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "The everywhere tumbler — cold drinks for hours, handle and all.",
     "image": "assets/products/B0CV4JV93G.jpg"
   },
@@ -1775,6 +1870,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "The 40-ounce Stanley in a classic black, ready for desk or road trip.",
     "image": "assets/products/B0BD7BY47S.jpg"
   },
@@ -1795,6 +1891,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "A nearly-indestructible Yeti tumbler that keeps drinks icy (or piping).",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B073WJMKHN.01._SCLZZZZZZZ_.jpg"
   },
@@ -1813,6 +1910,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A leak-resistant 40-ounce tumbler for people who toss bags around.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B0CJYNXQ9N.01._SCLZZZZZZZ_.jpg"
   },
@@ -1833,6 +1931,7 @@
       "parent",
       "kid"
     ],
+    "gender": "unisex",
     "why": "The spout-or-straw bottle that’s become a school-and-gym staple.",
     "image": "assets/products/B0BZYCJK89.jpg"
   },
@@ -1852,6 +1951,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A mini Hydro Flask that slips into a bag and still keeps drinks cold.",
     "image": "assets/products/B0HCPK3DB2.jpg"
   },
@@ -1870,6 +1970,7 @@
       "parent",
       "friend"
     ],
+    "gender": "unisex",
     "why": "A leak-resistant kids’ bottle with a handle little hands can actually hold.",
     "image": "assets/products/B0FNGLDMR3.jpg"
   },
@@ -1889,6 +1990,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "The tough, packable Baggu tote people use until it becomes a signature.",
     "image": "assets/products/B0FMBRGT3Q.jpg"
   },
@@ -1907,6 +2009,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A nested pouch set that finally organizes the chaos in a bag.",
     "image": "assets/products/B0GW9TX92F.jpg"
   },
@@ -1925,6 +2028,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A squashy, packable carry-on that somehow holds more than it should.",
     "image": "assets/products/B0FMBN4D4C.jpg"
   },
@@ -1944,6 +2048,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "Compression cubes that make a suitcase feel twice as big.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B081JS6YDV.01._SCLZZZZZZZ_.jpg"
   },
@@ -1962,6 +2067,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A see-through packing organizer from a travel-gear classic.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B0D6HLTDMZ.01._SCLZZZZZZZ_.jpg"
   },
@@ -1980,6 +2086,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A bright, durable pouch for chargers, toiletries, or trail snacks.",
     "image": "assets/products/B09RZS6VFX.jpg"
   },
@@ -1998,6 +2105,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A thoughtfully designed wash bag from the pack-geek favorite brand.",
     "image": "assets/products/B0D9HNDGC9.jpg"
   },
@@ -2016,6 +2124,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A simple, polished crossbody for days you don’t want a big bag.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B09FVCZ5WT.01._SCLZZZZZZZ_.jpg"
   },
@@ -2033,6 +2142,7 @@
       "friend",
       "partner"
     ],
+    "gender": "her",
     "why": "A roomy gym tote with pockets for everything a workout (and a day) needs.",
     "image": "assets/products/B0F1DZPLRL.jpg"
   },
@@ -2052,6 +2162,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A slim leather card case that feels like a grown-up upgrade.",
     "image": "assets/products/B0DJ3ND4T6.jpg"
   },
@@ -2070,6 +2181,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A thin full-grain bifold that doesn’t ruin a pocket’s silhouette.",
     "image": "assets/products/B00BYGCQC4.jpg"
   },
@@ -2087,6 +2199,7 @@
       "friend",
       "partner"
     ],
+    "gender": "her",
     "why": "A compact jewelry case so earrings don’t wander off mid-trip.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B086YFD5KN.01._SCLZZZZZZZ_.jpg"
   },
@@ -2105,6 +2218,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A folding trunk organizer that tames the chaos in a car.",
     "image": "assets/products/B09YV2MQZV.jpg"
   },
@@ -2125,6 +2239,7 @@
       "parent",
       "kid"
     ],
+    "gender": "unisex",
     "why": "A soft car cooler that keeps road-trip snacks actually cold.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B077YSX2YR.01._SCLZZZZZZZ_.jpg"
   },
@@ -2143,6 +2258,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A metal-free belt that sails through airport security.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B0DB2SFRKM.01._SCLZZZZZZZ_.jpg"
   },
@@ -2163,6 +2279,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "Plug it in and any TV suddenly has the apps everyone actually uses.",
     "image": "assets/products/B0DJGDC3BD.jpg"
   },
@@ -2182,6 +2299,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "4K streaming and a voice remote — an easy upgrade for movie night.",
     "image": "assets/products/B0G4XRP464.jpg"
   },
@@ -2201,6 +2319,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A faster 4K stick with Wi-Fi 6, made for households that stream a lot.",
     "image": "assets/products/B0CDR2MSVC.jpg"
   },
@@ -2219,6 +2338,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "Clip it to keys or a bag and stop doing the daily scavenger hunt.",
     "image": "assets/products/B0GJTFXNRX.jpg"
   },
@@ -2237,6 +2357,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A four-pack of AirTags — enough for keys, bags, and the thing that always disappears.",
     "image": "assets/products/B0GJTXVN9Z.jpg"
   },
@@ -2257,6 +2378,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "One compact adapter for outlets around the world, from a reliable brand.",
     "image": "assets/products/B0DHVNPN7J.jpg"
   },
@@ -2276,6 +2398,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "Two pocket power banks, because one always ends up in the other bag.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B083VRD7CX.01._SCLZZZZZZZ_.jpg"
   },
@@ -2295,6 +2418,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "A 10,000mAh battery pack with the ports people actually need.",
     "image": "assets/products/B08VH86B3G.jpg"
   },
@@ -2314,6 +2438,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "A charging stand that keeps a phone upright and topped up on a desk.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B0D8J82F1D.01._SCLZZZZZZZ_.jpg"
   },
@@ -2332,6 +2457,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A solid magnetic car mount so maps stay visible (and legal).",
     "image": "assets/products/B0D9PDWGKR.jpg"
   },
@@ -2352,6 +2478,7 @@
       "parent",
       "kid"
     ],
+    "gender": "unisex",
     "why": "Comfortable wireless headphones with long playtime, at a friendly price.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B09LYF2ST7.01._SCLZZZZZZZ_.jpg"
   },
@@ -2373,6 +2500,7 @@
       "parent",
       "kid"
     ],
+    "gender": "unisex",
     "why": "A sturdy little speaker for kitchens, patios, and last-minute hangouts.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B0BRKPVZB4.01._SCLZZZZZZZ_.jpg"
   },
@@ -2391,6 +2519,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A compact Anker Soundcore speaker that’s easy to throw in a bag.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B0DB185PTZ.01._SCLZZZZZZZ_.jpg"
   },
@@ -2410,6 +2539,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "The clip-on JBL classic — hook it to a bag and take the playlist with you.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B07Q8WH9TX.01._SCLZZZZZZZ_.jpg"
   },
@@ -2429,6 +2559,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "JBL’s tiny, punchy speaker, updated and still extremely giftable.",
     "image": "assets/products/B0CTNTGZKR.jpg"
   },
@@ -2448,6 +2579,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "Comfortable noise-cancelling headphones that punch above their price.",
     "image": "assets/products/B0C6KKQ7ND.jpg"
   },
@@ -2465,6 +2597,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A protective AirPods case with a keychain, so they stop vanishing.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B07FTJ2P5H.01._SCLZZZZZZZ_.jpg"
   },
@@ -2485,6 +2618,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "A portable fan for desks, strollers, and too-warm rooms.",
     "image": "assets/products/B085L71L9R.jpg"
   },
@@ -2505,6 +2639,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "A quiet handheld fan that’s a summer-and-travel essential.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B07QK9C9KT.01._SCLZZZZZZZ_.jpg"
   },
@@ -2524,6 +2659,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A hands-free neck fan for commutes, games, and hot kitchens.",
     "image": "assets/products/B0CWR6RB2D.jpg"
   },
@@ -2544,6 +2680,7 @@
       "kid",
       "parent"
     ],
+    "gender": "unisex",
     "why": "Shoot, print, and share sticky-back photos — instant nostalgia.",
     "image": "assets/products/B0CQN3NF5X.jpg"
   },
@@ -2563,6 +2700,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A tiny working TV for a desk — weird, wonderful, and very giftable.",
     "image": "assets/products/B0CMSGKMBC.jpg"
   },
@@ -2583,6 +2721,7 @@
       "partner",
       "kid"
     ],
+    "gender": "unisex",
     "why": "A 3D-printing pen for doodling in mid-air. (Makers, this one’s for you.)",
     "image": "assets/products/B0C2L54Q9H.jpg"
   },
@@ -2601,6 +2740,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "Stylish earplugs that take the edge off concerts without muffling the music.",
     "image": "assets/products/B0D4DFQTMJ.jpg"
   },
@@ -2622,6 +2762,7 @@
       "kid",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "Catan’s trading fun, shrunk into a travel-size card game.",
     "image": "assets/products/B0GKBJSPBS.jpg"
   },
@@ -2641,6 +2782,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "Pocket-size UNO for restaurants, planes, and five-minute breaks.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B07RDDCKZB.01._SCLZZZZZZZ_.jpg"
   },
@@ -2661,6 +2803,7 @@
       "kid",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "A speedy, tile-spelling classic that doesn’t need a board.",
     "image": "assets/products/1932188126.jpg"
   },
@@ -2680,6 +2823,7 @@
       "parent",
       "kid"
     ],
+    "gender": "unisex",
     "why": "A wobbly, laugh-out-loud stacking game with fuzzy little sticks.",
     "image": "assets/products/B08CZZJ3Y9.jpg"
   },
@@ -2698,6 +2842,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A card deck designed for playing — and actually enjoying — games alone.",
     "image": "assets/products/B0D2Y1NPQC.jpg"
   },
@@ -2717,6 +2862,7 @@
       "kid",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A satisfying, physics-y card-stacking game that gets competitive fast.",
     "image": "assets/products/B0BMGSHQ12.jpg"
   },
@@ -2735,6 +2881,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A cooperative party game that’s easy to teach and hard to stop playing.",
     "image": "assets/products/B0FB6MQ3WB.jpg"
   },
@@ -2753,6 +2900,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A fast, shouty word game that turns a table into a game night.",
     "image": "assets/products/B00B1UM8HQ.jpg"
   },
@@ -2772,6 +2920,7 @@
       "kid",
       "parent"
     ],
+    "gender": "unisex",
     "why": "The party-game staple. If they have a Switch, they want this.",
     "image": "assets/products/B01N1037CV.jpg"
   },
@@ -2791,6 +2940,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A glow-in-the-dark Smiski that turns brushing your teeth into a tiny ritual.",
     "image": "assets/products/B07KG5RX7K.jpg"
   },
@@ -2811,6 +2961,7 @@
       "kid",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A cheerful little LEGO plant that never needs watering.",
     "image": "assets/products/B0DRW6C2RF.jpg"
   },
@@ -2831,6 +2982,7 @@
       "kid",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A displayable Hogwarts crest build — catnip for Potter fans.",
     "image": "assets/products/B0G2T1VJH5.jpg"
   },
@@ -2850,6 +3002,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A miniature garden-house book nook that turns a shelf into a tiny world.",
     "image": "assets/products/B0C7KQ3WHK.jpg"
   },
@@ -2869,6 +3022,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A sparkling Ghibli puzzle that’s as pretty on the wall as it is to finish.",
     "image": "assets/products/B06XXNGZRR.jpg"
   },
@@ -2887,6 +3041,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A guided watercolor workbook for people who want to paint, not stare at a blank page.",
     "image": "assets/products/B0G1CNFF6W.jpg"
   },
@@ -2906,6 +3061,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A stylish paint-by-numbers kit that actually looks good when it’s done.",
     "image": "assets/products/B0911TQPSF.jpg"
   },
@@ -2924,6 +3080,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "Rich Japanese watercolors that make even a doodle look intentional.",
     "image": "assets/products/B001MPA6W4.jpg"
   },
@@ -2943,6 +3100,7 @@
       "partner",
       "kid"
     ],
+    "gender": "unisex",
     "why": "A generous watercolor set for beginners and weekend painters.",
     "image": "assets/products/B0GJTTRZJV.jpg"
   },
@@ -2961,6 +3119,7 @@
       "parent",
       "friend"
     ],
+    "gender": "unisex",
     "why": "A friendly how-to-draw book that actually gets kids putting pencil to paper.",
     "image": "assets/products/1950968227.jpg"
   },
@@ -2981,6 +3140,7 @@
       "partner",
       "kid"
     ],
+    "gender": "unisex",
     "why": "An affordable drawing tablet for first digital sketches and stream layouts.",
     "image": "assets/products/B075T6MTJX.jpg"
   },
@@ -3000,6 +3160,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "Scratch off each classic as you watch — a poster that becomes a diary.",
     "image": "assets/products/B083TD44PT.jpg"
   },
@@ -3019,6 +3180,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A custom hometown puzzle that’s personal without being cheesy.",
     "image": "assets/products/B00LLDPQ22.jpg"
   },
@@ -3038,6 +3200,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A stack of gorgeous bookstore postcards — send them, or pin them up.",
     "image": "assets/products/1452177937.jpg"
   },
@@ -3057,6 +3220,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A striking Penguin Classics edition of a book people actually reread.",
     "image": "assets/products/0143129481.jpg"
   },
@@ -3076,6 +3240,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A dream-big hiking book that’s as fun to flip through as it is to plan from.",
     "image": "assets/products/1787014177.jpg"
   },
@@ -3096,6 +3261,7 @@
       "parent",
       "kid"
     ],
+    "gender": "unisex",
     "why": "Paint with water, watch it fade, and start again — oddly calming.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B0010TEFFQ.01._SCLZZZZZZZ_.jpg"
   },
@@ -3115,6 +3281,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "An adult coloring book for phone-free evenings and rainy Sundays.",
     "image": "assets/products/B0D3CSPMZG.jpg"
   },
@@ -3134,6 +3301,7 @@
       "partner",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "A beautifully simple Japanese notebook that makes writing feel special.",
     "image": "assets/products/B003CT47ZU.jpg"
   },
@@ -3153,6 +3321,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A floral pop-up card that’s almost too pretty to send — almost.",
     "image": "assets/products/B0DKN81Z9X.jpg"
   },
@@ -3171,6 +3340,7 @@
       "parent",
       "friend"
     ],
+    "gender": "unisex",
     "why": "A charming introduction to the orchestra, perfect for a little music lover.",
     "image": "assets/products/0761176470.jpg"
   },
@@ -3190,6 +3360,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "A recipe a day, all year — the calendar people actually flip.",
     "image": "assets/products/1523530529.jpg"
   },
@@ -3210,6 +3381,7 @@
       "partner",
       "kid"
     ],
+    "gender": "unisex",
     "why": "A ridiculously cute croissant plush. Yes, it’s a stuffed pastry. It’s perfect.",
     "image": "assets/products/B0866XSSM9.jpg"
   },
@@ -3230,6 +3402,7 @@
       "kid",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A window rainbow-maker that throws little prisms around the room.",
     "image": "assets/products/B000068UG6.jpg"
   },
@@ -3248,6 +3421,7 @@
       "parent",
       "friend"
     ],
+    "gender": "unisex",
     "why": "A colorful, sturdy kids’ watch that’s actually fun to wear.",
     "image": "assets/products/B0D3N4MXLP.jpg"
   },
@@ -3268,6 +3442,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "The octagon G-Shock — tough, iconic, and surprisingly stylish.",
     "image": "assets/products/B07WJFS6LH.jpg"
   },
@@ -3285,6 +3460,7 @@
       "parent",
       "friend"
     ],
+    "gender": "unisex",
     "why": "The giggle machine is back, bigger and sillier, for a new generation.",
     "image": "assets/products/B0FX3KW535.jpg"
   },
@@ -3302,6 +3478,7 @@
       "parent",
       "friend"
     ],
+    "gender": "unisex",
     "why": "A remote-control shark truck that chomps, spins, and generally causes joy.",
     "image": "assets/products/B0GH2QG69X.jpg"
   },
@@ -3319,6 +3496,7 @@
       "parent",
       "friend"
     ],
+    "gender": "unisex",
     "why": "A cheerful beginner dollhouse for pretend-play afternoons.",
     "image": "assets/products/B0GGVJKFCD.jpg"
   },
@@ -3335,6 +3513,7 @@
       "kid",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A lightweight first balance bike (Vespa-style) for wobbly new riders.",
     "image": "assets/products/B095758S23.jpg"
   },
@@ -3354,6 +3533,7 @@
       "parent",
       "friend"
     ],
+    "gender": "unisex",
     "why": "Build a solar-powered flower that actually moves — science that looks pretty.",
     "image": "assets/products/B0G7LJMVPH.jpg"
   },
@@ -3372,6 +3552,7 @@
       "parent",
       "friend"
     ],
+    "gender": "unisex",
     "why": "A build-it-yourself tabletop robot for kids who like making things go.",
     "image": "assets/products/B00JEWFJJC.jpg"
   },
@@ -3389,6 +3570,7 @@
       "parent",
       "friend"
     ],
+    "gender": "unisex",
     "why": "The fort-building kit that turns a living room into a kingdom.",
     "image": "assets/products/B001DNHYC0.jpg"
   },
@@ -3407,6 +3589,7 @@
       "coworker",
       "me"
     ],
+    "gender": "unisex",
     "why": "A visual timer that makes ‘five more minutes’ actually make sense.",
     "image": "assets/products/B0BK2J71M1.jpg"
   },
@@ -3426,6 +3609,7 @@
       "kid",
       "partner"
     ],
+    "gender": "unisex",
     "why": "An adorable animal-shaped pouch that’s surprisingly sturdy.",
     "image": "assets/products/B07X3V3FG1.jpg"
   },
@@ -3444,6 +3628,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A sharp, well-made weeding knife that serious gardeners quietly love.",
     "image": "assets/products/B0007WFG2I.jpg"
   },
@@ -3463,6 +3648,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A charming watering can with a wide, gentle spout.",
     "image": "assets/products/B0GKR4YM27.jpg"
   },
@@ -3481,6 +3667,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "The legendary Swiss pruners — a lifetime tool for anyone with plants.",
     "image": "assets/products/B00023RYS6.jpg"
   },
@@ -3499,6 +3686,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A compact folding saw that backpackers and gardeners both respect.",
     "image": "assets/products/B000CED1QY.jpg"
   },
@@ -3518,6 +3706,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "Classic garden twine in a keeper that looks at home in a potting shed.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B08HVY8BMV.01._SCLZZZZZZZ_.jpg"
   },
@@ -3536,6 +3725,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A quick-dry microfiber towel for gym bags, beaches, and weekend trips.",
     "image": "assets/products/B01K1TWZOI.jpg"
   },
@@ -3553,6 +3743,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A breezy changing poncho for beach days and post-swim coverage.",
     "image": "assets/products/B0CKRCDMJ2.jpg"
   },
@@ -3571,6 +3762,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "Spoke reflectors that make a bike much more visible after dark.",
     "image": "assets/products/B00DNG8DSY.jpg"
   },
@@ -3589,6 +3781,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A ready-to-go bass kit for the person who always says they should fish more.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B07ZJSWWQB.01._SCLZZZZZZZ_.jpg"
   },
@@ -3606,6 +3799,7 @@
       "friend",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A proper detailing brush for the car-care nerd in your life.",
     "image": "assets/products/B00N8RI67Q.jpg"
   },
@@ -3625,6 +3819,7 @@
       "parent",
       "coworker"
     ],
+    "gender": "unisex",
     "why": "A rechargeable air duster that replaces a graveyard of canned air.",
     "image": "assets/products/B0DSW7R4VN.jpg"
   },
@@ -3644,6 +3839,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A simple hook massager that reaches the knots you can never quite hit.",
     "image": "assets/products/B00NH0XG7E.jpg"
   },
@@ -3662,6 +3858,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A loud, simple personal alarm that’s a thoughtful, practical gift.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B08TSVCZDZ.01._SCLZZZZZZZ_.jpg"
   },
@@ -3680,6 +3877,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "Comfortable, flattering joggers for errands, flights, and actual workouts.",
     "image": "https://images-na.ssl-images-amazon.com/images/P/B07ZP5S3D6.01._SCLZZZZZZZ_.jpg"
   },
@@ -3697,6 +3895,7 @@
       "friend",
       "partner"
     ],
+    "gender": "her",
     "why": "A sleek, sweat-wicking zip-up that’s an easy yes for gym people.",
     "image": "assets/products/B0F9LSLZDJ.jpg"
   },
@@ -3715,6 +3914,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A supportive pet bed — because the dog is absolutely on the list.",
     "image": "assets/products/B0759KRD1B.jpg"
   },
@@ -3733,6 +3933,7 @@
       "partner",
       "parent"
     ],
+    "gender": "unisex",
     "why": "A no-electricity bidet seat: surprisingly great, and they’ll use it every day.",
     "image": "assets/products/B0815CP9G5.jpg"
   },
@@ -3751,6 +3952,7 @@
       "friend",
       "partner"
     ],
+    "gender": "unisex",
     "why": "A cooler take on the Croc — still easy, a little more dressed.",
     "image": "assets/products/B0BX4WHTG8.jpg"
   }

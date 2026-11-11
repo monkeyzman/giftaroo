@@ -445,6 +445,50 @@ def budget_for(price: float) -> str:
         return "100"
     return None
 
+
+# Explicit gender tags. Anything not listed, and not named men's/women's, stays unisex.
+# "him" picks receive him + unisex; "her" picks receive her + unisex.
+HER = {
+    "B07XXPHQZK",  # Laneige Lip Sleeping Mask
+    "B09HN5CMBX",  # Laneige lip treatment
+    "B0G8SYD5B6",  # Tower 28 skincare minis
+    "B0DZHZV8N9",  # vitamin C body oil
+    "B0FL51LHF9",  # Amika styling set
+    "B0032RMX3U",  # Clinique lipstick
+    "B0C69YLVYK",  # ice roller facial
+    "B07DDCCLX8",  # ice roller
+    "B0BD48FGBC",  # Alleyoop beauty tool
+    "B002LC9OES",  # rosewater facial spray
+    "B091NJQ29P",  # eye gel
+    "B0BZWWB6FB",  # Sol de Janeiro set
+    "B09X3HB2BR",  # Sol de Janeiro mist
+    "B07DDRT223",  # floral body oil
+    "B0CCSRSGVD",  # heatless hair curler
+    "B0C8BLNQW6",  # teardrop earrings
+    "B08Z7HTHJD",  # lighted makeup mirror
+    "B0BSLX4GRT",  # silk scrunchies
+    "B08611589P",  # satin pillowcase
+    "B086YFD5KN",  # travel jewelry box
+    "B0GFGT4847",  # Gap poplin big shirt
+}
+HIM = {
+    "B00JUM59Z0",  # Hanes Men's zip hoodie
+    "B0D7NK9CQT",  # Coach Men's leather gloves
+}
+
+
+def gender_for(asin: str, name: str) -> str:
+    if asin in HIM:
+        return "him"
+    if asin in HER:
+        return "her"
+    folded = name.lower().replace("’", "'").replace("‘", "'")
+    if "women's" in folded or "for her" in folded:
+        return "her"
+    if "men's" in folded or "for him" in folded:
+        return "him"
+    return "unisex"
+
 def main():
     rows = []
     seen = set()
@@ -475,6 +519,12 @@ def main():
             continue
         seen.add(asin)
         approx = int(round(float(price)))
+        local_image = Path(__file__).resolve().parents[1] / "assets" / "products" / f"{asin}.jpg"
+        image = (
+            f"assets/products/{asin}.jpg"
+            if local_image.exists()
+            else f"https://images-na.ssl-images-amazon.com/images/P/{asin}.01._SCLZZZZZZZ_.jpg"
+        )
         rows.append({
             "id": asin,
             "asin": asin,
@@ -483,8 +533,9 @@ def main():
             "budget": b,
             "vibes": vibes,
             "recipients": recipients,
+            "gender": gender_for(asin, name),
             "why": why,
-            "image": f"https://images-na.ssl-images-amazon.com/images/P/{asin}.01._SCLZZZZZZZ_.jpg",
+            "image": image,
         })
 
     out = Path(__file__).resolve().parents[1] / "data" / "products.json"
@@ -497,8 +548,19 @@ def main():
     vibes = ["gamer", "cozy", "foodie", "tech", "outdoors", "collector", "beauty"]
     recips = ["me", "friend", "partner", "kid", "parent", "coworker"]
     print("\nBy budget:", {b: sum(1 for p in rows if p["budget"]==b) for b in budgets})
+    print("By gender:", {g: sum(1 for p in rows if p["gender"]==g) for g in ("him", "her", "unisex")})
     print("By vibe:", {v: sum(1 for p in rows if v in p["vibes"]) for v in vibes})
     print("By recipient:", {r: sum(1 for p in rows if r in p["recipients"]) for r in recips})
+    print("\nBudget x gender pool (him = him+unisex, her = her+unisex):")
+    for b in budgets:
+        him = sum(1 for p in rows if p["budget"]==b and p["gender"] in ("him", "unisex"))
+        her = sum(1 for p in rows if p["budget"]==b and p["gender"] in ("her", "unisex"))
+        anyone = sum(1 for p in rows if p["budget"]==b)
+        print(f"  ${b}: him {him} / her {her} / anyone {anyone}")
+    for cap in (20, 25):
+        him = sum(1 for p in rows if p["approxPrice"]<=cap and p["gender"] in ("him", "unisex"))
+        her = sum(1 for p in rows if p["approxPrice"]<=cap and p["gender"] in ("her", "unisex"))
+        print(f"  Secret Santa <=${cap}: him {him} / her {her} / anyone {sum(1 for p in rows if p['approxPrice']<=cap)}")
     print("\nBudget x vibe counts:")
     gaps = []
     for b in budgets:

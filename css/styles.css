@@ -22,6 +22,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html, body { margin: 0; min-height: 100%; }
 html { scroll-behavior: smooth; }
 
@@ -179,7 +180,9 @@ h2 { font-size: clamp(1.55rem, 6.5vw, 1.95rem); }
   color: var(--ink-soft);
   min-height: 44px;
 }
-.btn-amazon { width: 100%; margin-top: 8px; }
+.btn-amazon, #shareBtn, #rerollBtn, #makeOwnBtn, #shareGoBtn { width: 100%; margin-top: 10px; }
+.view-home .btn { width: 100%; }
+.btn-santa { margin-top: 10px; }
 
 .how {
   list-style: none;
@@ -437,7 +440,114 @@ h2 { font-size: clamp(1.55rem, 6.5vw, 1.95rem); }
 }
 .product h2 { margin: 6px 0 8px; font-size: 1.4rem; }
 .product-why { margin: 0; font-size: 0.98rem; }
-#rerollBtn, #againBtn { width: 100%; margin-top: 10px; }
+#againBtn { width: 100%; margin-top: 10px; }
+
+.share-miss {
+  margin: 0 0 16px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #f8ebe6;
+  color: var(--berry-deep);
+  font-size: 0.92rem;
+}
+.share-note {
+  margin: 0 0 12px;
+  color: var(--evergreen);
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+}
+.share-sheet {
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 18px;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  text-align: left;
+}
+.share-title {
+  margin: 0 0 10px;
+  font-weight: 650;
+  color: var(--evergreen);
+}
+.field {
+  display: block;
+  margin: 0 0 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+.field span { font-weight: 400; }
+.field input, .share-url {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 12px 12px;
+  border-radius: 12px;
+  border: 1.5px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  font: 500 16px/1.3 var(--font-sans);
+}
+.share-url { margin-top: 10px; }
+.share-status {
+  min-height: 1.2em;
+  margin: 8px 0 0;
+  font-size: 0.85rem;
+  color: var(--evergreen);
+}
+
+.ship-banner {
+  margin: 4px 0 14px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: var(--evergreen);
+  color: var(--gold-2);
+  font-size: 0.8rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.snow {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 6;
+  overflow: hidden;
+}
+.flake {
+  position: absolute;
+  top: -8%;
+  color: rgba(255, 250, 243, 0.9);
+  animation-name: snowfall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.35);
+}
+@keyframes snowfall {
+  to { transform: translateY(110vh); }
+}
+
+body.is-christmas .gift-box {
+  background:
+    radial-gradient(circle at 18% 30%, rgba(224, 197, 122, 0.95) 0 2.5px, transparent 3.5px),
+    radial-gradient(circle at 72% 42%, rgba(255, 250, 243, 0.7) 0 2px, transparent 3px),
+    radial-gradient(circle at 40% 72%, rgba(224, 197, 122, 0.85) 0 2px, transparent 3px),
+    radial-gradient(circle at 84% 78%, rgba(255, 250, 243, 0.55) 0 1.5px, transparent 2.5px),
+    linear-gradient(180deg, #2a6a52 0%, #1a3d32 100%);
+}
+body.is-christmas .ribbon-v {
+  background: linear-gradient(90deg, #7d2430, #d36a74, #7d2430);
+}
+body.is-christmas .gift-lid {
+  background: linear-gradient(180deg, #347a5e, #1e4a3c);
+}
+body.is-christmas .page-bg {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(196, 161, 90, 0.28), transparent 55%),
+    radial-gradient(circle at 12% 86%, rgba(156, 47, 59, 0.28), transparent 42%),
+    radial-gradient(circle at 90% 40%, rgba(47, 91, 73, 0.45), transparent 46%),
+    var(--bg-deep);
+}
 
 .disclosure {
   margin-top: 28px;
@@ -464,8 +574,9 @@ h2 { font-size: clamp(1.55rem, 6.5vw, 1.95rem); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .view, .gift, .gift.is-open .gift-lid, .gift.is-open .gift-box, .btn {
+  .view, .gift, .gift.is-open .gift-lid, .gift.is-open .gift-box, .btn, .flake {
     animation: none !important;
     transition: none !important;
   }
+  .snow { display: none !important; }
 }
