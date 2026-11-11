@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#14241e" />
+  <meta name="description" content="Unwrap a mystery gift that matches your budget, person, and vibe — then buy it on Amazon." />
+  <title>Giftaroo — mystery gifts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect rx='6' width='32' height='32' fill='%2314241e'/%3E%3Cpath d='M6 14h20v12H6z' fill='%239c2f3b'/%3E%3Cpath d='M6 10h20v5H6z' fill='%23c4a15a'/%3E%3Cpath d='M15 10v16h2V10z' fill='%23f4efe6'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip-link" href="#app">Skip to content</a>
+  <div class="page-bg" aria-hidden="true"></div>
+  <div class="app" id="app">
+    <header class="topbar">
+      <button type="button" class="brand" id="brandBtn" aria-label="Back to home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name" data-brand>Giftaroo</span>
+      </button>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <section class="view view-home is-active" id="view-home" aria-label="Home">
+        <p class="eyebrow">Mystery gifts, unwrapped</p>
+        <h1>A little mystery.<br />A lot of delight.</h1>
+        <p class="lede">Pick a budget, who it’s for, and a vibe. We’ll wrap a real Amazon gift — you tap to reveal it.</p>
+        <button type="button" class="btn btn-primary" id="startBtn">Unwrap a gift</button>
+        <ol class="how">
+          <li><span>1</span>Choose a budget and a vibe</li>
+          <li><span>2</span>Tap the box to unwrap it</li>
+          <li><span>3</span>Buy it on Amazon in one tap</li>
+        </ol>
+      </section>
+
+      <!-- QUIZ -->
+      <section class="view" id="view-quiz" aria-label="Gift details" hidden>
+        <div class="progress" aria-hidden="true">
+          <span class="dot is-on" data-step-dot="1"></span>
+          <span class="dot" data-step-dot="2"></span>
+          <span class="dot" data-step-dot="3"></span>
+        </div>
+        <p class="step-kicker" id="stepKicker">Step 1 of 3</p>
+        <h2 id="stepTitle">What’s the budget?</h2>
+        <p class="step-sub" id="stepSub">Prices are approximate and can change.</p>
+        <div class="choices" id="choices" role="group" aria-labelledby="stepTitle"></div>
+        <div class="quiz-nav">
+          <button type="button" class="btn btn-ghost" id="backStepBtn">Back</button>
+          <button type="button" class="btn btn-primary" id="nextStepBtn" disabled>Continue</button>
+        </div>
+      </section>
+
+      <!-- WRAP -->
+      <section class="view view-wrap" id="view-wrap" aria-label="Wrapped gift" hidden>
+        <p class="eyebrow">Your mystery gift is ready</p>
+        <h2>Tap to unwrap</h2>
+        <p class="wrap-meta" id="wrapMeta"></p>
+        <button type="button" class="gift-hit" id="giftHit" aria-label="Unwrap your mystery gift">
+          <div class="gift" id="gift">
+            <div class="gift-shadow"></div>
+            <div class="gift-lid">
+              <div class="bow">
+                <span class="bow-loop left"></span>
+                <span class="bow-loop right"></span>
+                <span class="bow-knot"></span>
+              </div>
+            </div>
+            <div class="gift-box">
+              <span class="ribbon-v"></span>
+            </div>
+          </div>
+        </button>
+        <p class="hint" id="unwrapHint">Give the box a tap</p>
+      </section>
+
+      <!-- REVEAL -->
+      <section class="view view-reveal" id="view-reveal" aria-label="Gift reveal" hidden>
+        <p class="eyebrow reveal-kicker">You unwrapped…</p>
+        <article class="product" id="productCard">
+          <div class="product-image-wrap">
+            <img id="productImage" alt="" width="400" height="400" referrerpolicy="no-referrer" />
+            <div class="product-image-fallback" id="imageFallback" hidden aria-hidden="true">✦</div>
+          </div>
+          <p class="product-price" id="productPrice"></p>
+          <h2 id="productName"></h2>
+          <p class="product-why" id="productWhy"></p>
+        </article>
+        <a class="btn btn-primary btn-amazon" id="amazonBtn" target="_blank" rel="noopener noreferrer sponsored">Get it on Amazon</a>
+        <button type="button" class="btn btn-secondary" id="rerollBtn">Try one more (free reroll)</button>
+        <button type="button" class="btn btn-ghost" id="againBtn">Start over</button>
+      </section>
+    </main>
+
+    <footer class="disclosure">
+      <p>As an Amazon Associate I earn from qualifying purchases.</p>
+      <p class="fineprint">Amazon prices and availability change. What’s shown here is approximate, and checkout happens on Amazon.</p>
+    </footer>
+  </div>
+  <canvas id="confetti" class="confetti" aria-hidden="true"></canvas>
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
