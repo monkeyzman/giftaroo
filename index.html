@@ -8,7 +8,7 @@
   <title>Giftaroo — mystery gifts</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,560;0,9..144,680;1,9..144,560&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect rx='6' width='32' height='32' fill='%2314241e'/%3E%3Cpath d='M6 14h20v12H6z' fill='%239c2f3b'/%3E%3Cpath d='M6 10h20v5H6z' fill='%23c4a15a'/%3E%3Cpath d='M15 10v16h2V10z' fill='%23f4efe6'/%3E%3C/svg%3E" />
 </head>
@@ -22,17 +22,47 @@
         <span class="brand-mark" aria-hidden="true"></span>
         <span class="brand-name" data-brand>Giftaroo</span>
       </button>
+      <div class="top-actions">
+        <button type="button" class="icon-btn" id="muteBtn" aria-pressed="false" aria-label="Mute sounds">
+          <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M4 9.5h3.2L12 5v14l-4.8-4.5H4z"/>
+            <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="M15.5 9.2a3.6 3.6 0 010 5.6M17.8 7a6.2 6.2 0 010 10"/>
+          </svg>
+          <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M4 9.5h3.2L12 5v14l-4.8-4.5H4z"/>
+            <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="M16 10l5 5M21 10l-5 5"/>
+          </svg>
+        </button>
+      </div>
     </header>
 
     <main>
       <p class="ship-banner" id="shipBanner" hidden></p>
       <!-- HOME -->
       <section class="view view-home is-active" id="view-home" aria-label="Home">
+        <div class="hero-stage" aria-hidden="true">
+          <span class="spark s1"></span>
+          <span class="spark s2"></span>
+          <span class="spark s3"></span>
+          <div class="hero-scale">
+          <div class="gift gift-hero">
+            <div class="gift-shadow"></div>
+            <div class="gift-lid">
+              <div class="bow">
+                <span class="bow-loop left"></span>
+                <span class="bow-loop right"></span>
+                <span class="bow-knot"></span>
+              </div>
+            </div>
+            <div class="gift-box"><span class="ribbon-v"></span></div>
+          </div>
+          </div>
+        </div>
         <p class="eyebrow">Mystery gifts, unwrapped</p>
-        <h1>A little mystery.<br />A lot of delight.</h1>
+        <h1>A little mystery.<br /><em>A lot of delight.</em></h1>
         <p class="lede">Pick a budget, who it’s for, and a vibe. For him, for her, or anyone — then tap to unwrap a real Amazon gift.</p>
         <p class="share-miss" id="shareMiss" hidden>That surprise link doesn’t match a gift we have. Make your own instead.</p>
-        <button type="button" class="btn btn-primary" id="startBtn">Unwrap a gift</button>
+        <button type="button" class="btn btn-primary btn-juicy" id="startBtn">Unwrap a gift</button>
         <button type="button" class="btn btn-secondary btn-santa" id="secretSantaBtn" hidden>Secret Santa</button>
         <ol class="how">
           <li><span>1</span>Choose a budget and a vibe</li>
@@ -77,10 +107,13 @@
             </div>
             <div class="gift-box">
               <span class="ribbon-v"></span>
+              <span class="gift-shine"></span>
             </div>
+            <div class="gift-glow"></div>
+            <div class="rays" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
           </div>
         </button>
-        <p class="hint" id="unwrapHint">Give the box a tap</p>
+        <p class="hint" id="unwrapHint" role="status">Give the box a tap</p>
       </section>
 
       <!-- REVEAL -->
@@ -122,7 +155,9 @@
     </footer>
   </div>
   <canvas id="confetti" class="confetti" aria-hidden="true"></canvas>
+  <div class="flash" id="flash" aria-hidden="true"></div>
   <script src="js/config.js"></script>
+  <script src="js/sound.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

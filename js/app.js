@@ -55,7 +55,58 @@
     lockedProduct: null,
   };
 
+  var unwrapGen = 0;
+
   function $(id) { return document.getElementById(id); }
+
+  function reducedMotion() {
+    return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }
+
+  function haptic(pattern) {
+    try {
+      if (navigator.vibrate) navigator.vibrate(pattern);
+    } catch (e) { /* optional */ }
+  }
+
+  function sfx() {
+    return window.GiftarooSound || {
+      isMuted: function () { return true; },
+      toggle: function () { return true; },
+      tap: function () {},
+      select: function () {},
+      suspense: function () {},
+      reveal: function () {},
+      pop: function () {}
+    };
+  }
+
+  function play(name) {
+    try { sfx()[name](); } catch (e) {}
+  }
+
+  function syncMuteBtn() {
+    var btn = $("muteBtn");
+    if (!btn) return;
+    var muted = false;
+    try { muted = sfx().isMuted(); } catch (e) { muted = false; }
+    btn.classList.toggle("is-muted", muted);
+    btn.setAttribute("aria-pressed", muted ? "true" : "false");
+    btn.setAttribute("aria-label", muted ? "Unmute sounds" : "Mute sounds");
+  }
+
+  function cancelUnwrap() {
+    unwrapGen += 1;
+  }
+
+  function flashBurst() {
+    if (reducedMotion()) return;
+    var flash = $("flash");
+    if (!flash) return;
+    flash.classList.remove("is-on");
+    void flash.offsetWidth;
+    flash.classList.add("is-on");
+  }
 
   function christmasOn() {
     return CONFIG.christmasMode !== false && CONFIG.christmasMode !== "false";
@@ -89,7 +140,7 @@
   function mountSnow() {
     var snow = $("snow");
     if (!snow) return;
-    var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var reduced = reducedMotion();
     if (reduced) {
       snow.hidden = true;
       return;
@@ -128,7 +179,8 @@
     mountSnow();
   }
 
-  function showView(id) {
+  function showView(id, dir) {
+    document.body.dataset.dir = dir || "forward";
     ["view-home", "view-quiz", "view-wrap", "view-reveal"].forEach(function (vid) {
       var el = $(vid);
       if (!el) return;
@@ -136,7 +188,15 @@
       el.hidden = !on;
       el.classList.toggle("is-active", on);
     });
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: reducedMotion() ? "auto" : "smooth" });
+    var active = $(id);
+    if (active) {
+      var head = active.querySelector("h1, h2");
+      if (head) {
+        if (!head.hasAttribute("tabindex")) head.setAttribute("tabindex", "-1");
+        try { head.focus({ preventScroll: true }); } catch (e) { head.focus(); }
+      }
+    }
   }
 
   function amazonUrl(asin) {
@@ -291,6 +351,8 @@
         ? item.label + "<small>" + item.sub + "</small>"
         : item.label;
       btn.addEventListener("click", function () {
+        haptic(10);
+        play("select");
         if (state.secretSanta) {
           if (step === 1) state.priceMax = Number(item.id);
           if (step === 2) state.gender = item.id;
@@ -313,6 +375,15 @@
     $("backStepBtn").hidden = false;
     $("nextStepBtn").disabled = !selectionReady();
     $("nextStepBtn").textContent = step === stepCount() ? "Wrap it up" : "Continue";
+  }
+
+  function pulseQuiz(dir) {
+    document.body.dataset.dir = dir || "forward";
+    var view = $("view-quiz");
+    if (!view) return;
+    view.classList.remove("is-pulse");
+    void view.offsetWidth;
+    view.classList.add("is-pulse");
   }
 
   function genderPhrase() {
@@ -356,7 +427,7 @@
     resetWrapCopy();
     $("wrapMeta").textContent = wrapLabel();
     resetGiftBox();
-    showView("view-wrap");
+    showView("view-wrap", "forward");
   }
 
   function showProduct(product) {
@@ -396,29 +467,55 @@
   }
 
   function unwrap() {
+    if ($("giftHit").disabled) return;
     var gift = $("gift");
-    var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var reduced = reducedMotion();
+    var gen = ++unwrapGen;
     $("giftHit").disabled = true;
-    $("unwrapHint").textContent = "Tearing the paper…";
     var product = state.lockedProduct || pickProduct();
     if (!product) {
       $("unwrapHint").textContent = "We couldn’t find a match. Try different picks.";
       $("giftHit").disabled = false;
       return;
     }
+    haptic(reduced ? [12] : [16, 40, 16, 40, 24]);
     function reveal() {
+      if (gen !== unwrapGen) return;
       gift.classList.remove("is-shaking");
       gift.classList.add("is-open");
+      play("reveal");
+      haptic([24, 36, 18, 70]);
+      flashBurst();
       showProduct(product);
       burstConfetti();
-      setTimeout(function () { showView("view-reveal"); }, reduced ? 50 : 550);
+      setTimeout(function () {
+        if (gen !== unwrapGen) return;
+        showView("view-reveal", "forward");
+      }, reduced ? 40 : 700);
     }
     if (reduced) {
+      $("unwrapHint").textContent = "Opening…";
+      play("tap");
       reveal();
       return;
     }
+    play("suspense");
     gift.classList.add("is-shaking");
-    setTimeout(reveal, 720);
+    var beats = ["Something’s shifting…", "The ribbon’s slipping…", "Here it comes…"];
+    var beat = 0;
+    $("unwrapHint").textContent = beats[0];
+    var timer = setInterval(function () {
+      if (gen !== unwrapGen) {
+        clearInterval(timer);
+        return;
+      }
+      beat += 1;
+      if (beat < beats.length) $("unwrapHint").textContent = beats[beat];
+    }, 460);
+    setTimeout(function () {
+      clearInterval(timer);
+      reveal();
+    }, 1420);
   }
 
   function reroll() {
@@ -431,6 +528,8 @@
       return;
     }
     state.rerollUsed = true;
+    haptic([12, 30, 18]);
+    play("pop");
     showProduct(product);
     burstConfetti();
     $("rerollBtn").hidden = true;
@@ -513,6 +612,7 @@
   }
 
   function openShared(share) {
+    cancelUnwrap();
     state.shared = share;
     state.secretSanta = false;
     state.lockedProduct = null;
@@ -538,7 +638,7 @@
       note.hidden = true;
       note.textContent = "";
     }
-    showView("view-wrap");
+    showView("view-wrap", "forward");
   }
 
   function clearShareHash() {
@@ -552,7 +652,7 @@
   var confettiRaf = null;
 
   function burstConfetti() {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (reducedMotion()) return;
     var canvas = $("confetti");
     var ctx = canvas.getContext("2d");
     var dpr = Math.max(1, window.devicePixelRatio || 1);
@@ -561,24 +661,26 @@
     canvas.style.width = window.innerWidth + "px";
     canvas.style.height = window.innerHeight + "px";
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    var colors = ["#9c2f3b", "#c4a15a", "#2f5b49", "#fffaf3", "#e0c57a", "#7d2430"];
+    var colors = ["#9c2f3b", "#c4a15a", "#2f5b49", "#fffaf3", "#e0c57a", "#7d2430", "#f2d48a"];
     var cx = window.innerWidth / 2;
-    var cy = window.innerHeight * 0.38;
+    var cy = window.innerHeight * 0.36;
     confettiPieces = [];
-    for (var i = 0; i < 90; i++) {
+    for (var i = 0; i < 130; i++) {
       var angle = Math.random() * Math.PI * 2;
-      var speed = 3 + Math.random() * 8;
+      var speed = 2.5 + Math.random() * 9;
+      var ribbon = i % 7 === 0;
       confettiPieces.push({
-        x: cx,
+        x: cx + (Math.random() - 0.5) * 30,
         y: cy,
         vx: Math.cos(angle) * speed,
-        vy: Math.sin(angle) * speed - 4,
-        w: 6 + Math.random() * 7,
-        h: 8 + Math.random() * 8,
+        vy: Math.sin(angle) * speed - 5,
+        w: ribbon ? 4 + Math.random() * 3 : 5 + Math.random() * 7,
+        h: ribbon ? 16 + Math.random() * 14 : 6 + Math.random() * 8,
         color: colors[i % colors.length],
         rot: Math.random() * Math.PI,
-        vr: (Math.random() - 0.5) * 0.3,
+        vr: (Math.random() - 0.5) * 0.35,
         life: 0,
+        shape: i % 5 === 0 ? "circle" : "rect",
       });
     }
     if (confettiRaf) cancelAnimationFrame(confettiRaf);
@@ -599,7 +701,13 @@
           ctx.rotate(p.rot);
           ctx.globalAlpha = Math.max(0, 1 - p.life / 180);
           ctx.fillStyle = p.color;
-          ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+          if (p.shape === "circle") {
+            ctx.beginPath();
+            ctx.arc(0, 0, p.w / 2, 0, Math.PI * 2);
+            ctx.fill();
+          } else {
+            ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+          }
           ctx.restore();
         }
       });
@@ -614,6 +722,7 @@
   }
 
   function startOver() {
+    cancelUnwrap();
     state.step = 1;
     state.budget = null;
     state.priceMax = null;
@@ -629,10 +738,11 @@
     $("shareMiss").hidden = true;
     resetWrapCopy();
     clearShareHash();
-    showView("view-home");
+    showView("view-home", "back");
   }
 
   function beginQuiz(secretSanta) {
+    cancelUnwrap();
     state.secretSanta = !!secretSanta;
     state.step = 1;
     state.budget = null;
@@ -651,25 +761,47 @@
     }
     clearShareHash();
     renderChoices();
-    showView("view-quiz");
+    showView("view-quiz", "forward");
   }
 
   function bind() {
-    $("startBtn").addEventListener("click", function () { beginQuiz(false); });
-    $("secretSantaBtn").addEventListener("click", function () { beginQuiz(true); });
+    syncMuteBtn();
+    $("muteBtn").addEventListener("click", function () {
+      try {
+        var muted = sfx().toggle();
+        syncMuteBtn();
+        if (!muted) play("tap");
+      } catch (e) {}
+    });
+    $("startBtn").addEventListener("click", function () {
+      haptic(12);
+      play("tap");
+      beginQuiz(false);
+    });
+    $("secretSantaBtn").addEventListener("click", function () {
+      haptic(12);
+      play("tap");
+      beginQuiz(true);
+    });
     $("brandBtn").addEventListener("click", startOver);
     $("backStepBtn").addEventListener("click", function () {
+      play("tap");
       if (state.step === 1) {
-        showView("view-home");
+        showView("view-home", "back");
         return;
       }
       state.step -= 1;
       renderChoices();
+      pulseQuiz("back");
     });
     $("nextStepBtn").addEventListener("click", function () {
+      if ($("nextStepBtn").disabled) return;
+      haptic(12);
+      play("tap");
       if (state.step < stepCount()) {
         state.step += 1;
         renderChoices();
+        pulseQuiz("forward");
         return;
       }
       goWrap();
