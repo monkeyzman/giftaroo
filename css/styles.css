@@ -790,8 +790,8 @@ body.is-christmas .page-bg {
   margin-top: 28px;
   padding-top: 16px;
   border-top: 1px solid var(--line);
-  color: var(--ink-soft);
-  font-size: 0.75rem;
+  color: #3e3832;
+  font-size: 0.78rem;
   text-align: center;
 }
 .disclosure p { margin: 0 0 6px; }
@@ -836,8 +836,9 @@ body.is-christmas .page-bg {
   border: 0;
   background: var(--paper);
   border-radius: 999px;
-  min-height: 36px;
-  padding: 0 10px;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 12px;
   font: 600 0.78rem/1 var(--font-sans);
   color: var(--evergreen);
   cursor: pointer;

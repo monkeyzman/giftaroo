@@ -327,8 +327,9 @@
     if (opts.occasion && product.occasions && product.occasions.indexOf(opts.occasion) !== -1) score += 3;
     if (opts.priceMax) {
       var ratio = price / Number(opts.priceMax);
-      if (ratio >= 0.55) score += 4;
-      else if (ratio >= 0.3) score += 2;
+      if (ratio >= 0.7) score += 8;
+      else if (ratio >= 0.45) score += 5;
+      else if (ratio >= 0.25) score += 2;
     }
     if (product.image && String(product.image).indexOf("assets/") === 0) score += 1;
     return score;
@@ -1521,6 +1522,14 @@
       $("startBtn").textContent = "Catalog failed to load";
       if ($("secretSantaBtn")) $("secretSantaBtn").disabled = true;
     });
+
+  if ("serviceWorker" in navigator) {
+    var registerSW = function () {
+      navigator.serviceWorker.register("sw.js").catch(function () {});
+    };
+    if (document.readyState === "complete") registerSW();
+    else window.addEventListener("load", registerSW);
+  }
 
   window.__WRAPT__ = {
     getState: function () { return state; },

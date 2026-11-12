@@ -22,7 +22,7 @@ Both live in **one config file**: [`js/config.js`](js/config.js).
 ```js
 window.WRAPT_CONFIG = {
   brandName: "Giftaroo",       // change this to your name
-  affiliateTag: "giftaroo-20", // replace with your Amazon Associates tag
+  affiliateTag: "giftaroo-20", // live Associates tag — leave this in place
   christmasMode: true,         // snow, holiday wrap, countdown, Secret Santa
   lastShipDate: "2026-12-18",  // last Amazon standard-shipping day before Christmas
 };
@@ -30,9 +30,7 @@ window.WRAPT_CONFIG = {
 
 Set `christmasMode` to `false` to hide the snow, holiday wrapping paper, shipping countdown, and Secret Santa button. Gender filtering and share links stay on.
 
-That’s it. The logo, page title, and every Amazon link (`https://www.amazon.com/dp/ASIN?tag=YOURTAG`) read from those two constants. After Amazon approves your Associates account, paste your tag (it usually looks like `yourstore-20`) and redeploy.
-
-Until you change it, links use the placeholder tag `giftaroo-20` and will not earn commission.
+That’s it. The logo, page title, and every Amazon link (`https://www.amazon.com/dp/ASIN?tag=giftaroo-20`) read from that file. The live tag is `giftaroo-20`.
 
 ## Product catalog
 
@@ -83,34 +81,41 @@ In the repo, **Settings → Pages** must use source **GitHub Actions** (not “D
 
 ## What’s in this version
 
-- Budgets: $15 / $25 / $50 / $100
-- For him / For her / Anyone (him + unisex, her + unisex, or the whole catalog)
-- Recipients: me, friend, partner, kid, parent, coworker
-- Vibes: gamer, cozy, foodie, tech, outdoors, collector, beauty, surprise me
-- Gift-box unwrap (shake + lid + confetti)
-- One free reroll per round
-- “Send the surprise” builds a link (`#gift=ASIN&from=…&note=…`) and uses the Web Share API, with copy-link as the fallback. Opening the link plays the unwrap for that gift, then offers “Make your own mystery gift.”
-- Christmas mode (on by default): light snow, holiday wrap, a countdown to `lastShipDate`, and a Secret Santa preset with $20 and $25 limits
-- Mobile-first layout that also looks good centered on a desktop
-
-## Project layout
+- Occasion, who, for him / for her / anyone, a budget ceiling slider ($10–$100), and a vibe
+- Who: me, partner, friend, kid, parent, sibling, grandparent, coworker, teacher, neighbor, or a whole group
+- Vibes: cozy, gamer, foodie, tech, outdoors, beauty, reader, fitness, creative, collector, surprise me
+- Gift-box unwrap (shake, lid, flash, confetti) with a short synthesized soundtrack and a mute toggle. Sound errors never block a tap. Reduced motion skips the spectacle.
+- Three shakes to reroll a solo gift
+- Group mode: one sealed gift per name, no repeats, with him / her / anyone / kid on each person
+- Saved gifts and a recent-unwrap shelf, stored in the browser
+- “Send the surprise” builds `#gift=ASIN&from=…&note=…` and uses the Web Share API, with copy-link as the fallback. Opening the link is a recipient reveal: a note, then the box.
+- “Share a card” draws a picture of the reveal for the system share sheet, or downloads it
+- Christmas mode (on by default): light snow, holiday wrap, a countdown to `lastShipDate`, and a Secret Santa shortcut (one person or a group)
+- Installable PWA (manifest, icons, service worker) so the shell works offline
+- Amazon Associates disclosure on every screen. Checkout always happens on Amazon.
+- Mobile-first layout, including short landscape screens
 
 ```
 index.html
 css/styles.css
 js/config.js          ← brand name + affiliate tag
+js/sound.js
 js/app.js
+sw.js
+manifest.webmanifest
 data/products.json
 assets/products/      ← cached product photos used in the reveal
+assets/og.png         ← link-preview image
 scripts/build_catalog.py
-screenshots/          ← home and reveal, captured on a phone-sized viewport
-README.md
 ```
+
+## Project layout
+
+The file tree in “What’s in this version” is the current layout. `screenshots/` holds earlier phone captures.
 
 ## Limitations
 
-- The affiliate tag is a placeholder until you add your own.
 - Prices are snapshots from public gift guides and Amazon listings (mostly November 2026) and will drift.
 - Most product photos are cached locally in `assets/products/` (sourced from Amazon’s public image CDN or the gift guides used to verify each item). A few items don’t have a cached photo and show a fallback graphic instead.
-- Matching relaxes recipient, then vibe, if a tight combo doesn’t have a leftover product (so a reroll still works).
+- Matching stays inside the budget and the gender filter. Kid gifts only come from kid-tagged products. If a vibe is thin, other gifts in that budget can still appear.
 - This is not an official Amazon app and does not add items to a user’s cart automatically — Amazon doesn’t allow that. The button opens the product page, and they check out there.
