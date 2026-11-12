@@ -155,7 +155,8 @@
     "budget": "25",
     "vibes": [
       "beauty",
-      "cozy"
+      "cozy",
+      "fitness"
     ],
     "recipients": [
       "me",
@@ -183,7 +184,11 @@
     ],
     "gender": "her",
     "why": "A simple, inexpensive ice roller for morning puffiness.",
-    "image": "https://images-na.ssl-images-amazon.com/images/P/B07DDCCLX8.01._SCLZZZZZZZ_.jpg"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B07DDCCLX8.01._SCLZZZZZZZ_.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B0BD48FGBC",
@@ -221,7 +226,11 @@
     ],
     "gender": "her",
     "why": "A classic rosewater mist for a quick, refreshing glow.",
-    "image": "assets/products/B002LC9OES.jpg"
+    "image": "assets/products/B002LC9OES.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B091NJQ29P",
@@ -240,7 +249,11 @@
     ],
     "gender": "her",
     "why": "A tiny, affordable eye gel that actually feels like a wake-up call.",
-    "image": "https://images-na.ssl-images-amazon.com/images/P/B091NJQ29P.01._SCLZZZZZZZ_.jpg"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B091NJQ29P.01._SCLZZZZZZZ_.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B00VK5SG46",
@@ -261,7 +274,11 @@
     ],
     "gender": "unisex",
     "why": "A giftable tin of lip balm and skin-care staples almost anyone will use.",
-    "image": "assets/products/B00VK5SG46.jpg"
+    "image": "assets/products/B00VK5SG46.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B0BZWWB6FB",
@@ -429,7 +446,11 @@
     ],
     "gender": "unisex",
     "why": "The chic, great-smelling alternative to a bulky sanitizer bottle.",
-    "image": "assets/products/B0GV63HYNJ.jpg"
+    "image": "assets/products/B0GV63HYNJ.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B08611589P",
@@ -470,7 +491,11 @@
     ],
     "gender": "unisex",
     "why": "Drop one in the shower and the bathroom turns into a tiny spa.",
-    "image": "https://images-na.ssl-images-amazon.com/images/P/B0B9X4GD1N.01._SCLZZZZZZZ_.jpg"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B0B9X4GD1N.01._SCLZZZZZZZ_.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B0DSWZMB1T",
@@ -489,7 +514,10 @@
     ],
     "gender": "unisex",
     "why": "A bright citrus-and-passion-fruit candle in a glossy jar made for display.",
-    "image": "assets/products/B0DSWZMB1T.jpg"
+    "image": "assets/products/B0DSWZMB1T.jpg",
+    "occasions": [
+      "house"
+    ]
   },
   {
     "id": "B09HQ6CSBY",
@@ -508,7 +536,10 @@
     ],
     "gender": "unisex",
     "why": "Candles timed for a short wind-down, so the evening actually stays calm.",
-    "image": "assets/products/B09HQ6CSBY.jpg"
+    "image": "assets/products/B09HQ6CSBY.jpg",
+    "occasions": [
+      "house"
+    ]
   },
   {
     "id": "B08HJQVB1J",
@@ -527,7 +558,10 @@
     ],
     "gender": "unisex",
     "why": "A state-scented candle that smells like home — in the best way.",
-    "image": "assets/products/B08HJQVB1J.jpg"
+    "image": "assets/products/B08HJQVB1J.jpg",
+    "occasions": [
+      "house"
+    ]
   },
   {
     "id": "B08L9P8S9C",
@@ -546,7 +580,10 @@
     ],
     "gender": "unisex",
     "why": "A handsome, long-burning candle that makes a room feel instantly dressed.",
-    "image": "assets/products/B08L9P8S9C.jpg"
+    "image": "assets/products/B08L9P8S9C.jpg",
+    "occasions": [
+      "house"
+    ]
   },
   {
     "id": "B0CTJGJL2T",
@@ -565,7 +602,10 @@
     ],
     "gender": "unisex",
     "why": "Melt a favorite jar candle with a warm lamp — no open flame required.",
-    "image": "https://images-na.ssl-images-amazon.com/images/P/B0CTJGJL2T.01._SCLZZZZZZZ_.jpg"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B0CTJGJL2T.01._SCLZZZZZZZ_.jpg",
+    "occasions": [
+      "house"
+    ]
   },
   {
     "id": "B09FYZ7162",
@@ -584,7 +624,10 @@
     ],
     "gender": "unisex",
     "why": "A pretty warmer lamp that turns any jar candle into ambient lighting.",
-    "image": "https://images-na.ssl-images-amazon.com/images/P/B09FYZ7162.01._SCLZZZZZZZ_.jpg"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B09FYZ7162.01._SCLZZZZZZZ_.jpg",
+    "occasions": [
+      "house"
+    ]
   },
   {
     "id": "B095JZTMGX",
@@ -604,7 +647,12 @@
     ],
     "gender": "unisex",
     "why": "A refillable electric lighter — no more digging for matches.",
-    "image": "https://images-na.ssl-images-amazon.com/images/P/B095JZTMGX.01._SCLZZZZZZZ_.jpg"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B095JZTMGX.01._SCLZZZZZZZ_.jpg",
+    "occasions": [
+      "house",
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B0C65DBXJ5",
@@ -739,7 +787,10 @@
     ],
     "gender": "unisex",
     "why": "Cloud-soft memory-foam slippers for cold floors and slow mornings.",
-    "image": "https://images-na.ssl-images-amazon.com/images/P/B0CCCV8XZJ.01._SCLZZZZZZZ_.jpg"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B0CCCV8XZJ.01._SCLZZZZZZZ_.jpg",
+    "occasions": [
+      "house"
+    ]
   },
   {
     "id": "B075RYLCZF",
@@ -759,7 +810,10 @@
     ],
     "gender": "unisex",
     "why": "A wearable blanket for movie nights when a regular throw isn’t enough.",
-    "image": "https://images-na.ssl-images-amazon.com/images/P/B075RYLCZF.01._SCLZZZZZZZ_.jpg"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B075RYLCZF.01._SCLZZZZZZZ_.jpg",
+    "occasions": [
+      "house"
+    ]
   },
   {
     "id": "B0HF9N2J2S",
@@ -779,7 +833,10 @@
     ],
     "gender": "unisex",
     "why": "A packable, camping-grade puffy blanket that’s just as good on the couch.",
-    "image": "assets/products/B0HF9N2J2S.jpg"
+    "image": "assets/products/B0HF9N2J2S.jpg",
+    "occasions": [
+      "house"
+    ]
   },
   {
     "id": "B095LDHJ74",
@@ -830,7 +887,8 @@
     "budget": "15",
     "vibes": [
       "cozy",
-      "tech"
+      "tech",
+      "reader"
     ],
     "recipients": [
       "me",
@@ -849,7 +907,8 @@
     "approxPrice": 13,
     "budget": "15",
     "vibes": [
-      "cozy"
+      "cozy",
+      "reader"
     ],
     "recipients": [
       "me",
@@ -868,7 +927,8 @@
     "approxPrice": 7,
     "budget": "15",
     "vibes": [
-      "cozy"
+      "cozy",
+      "reader"
     ],
     "recipients": [
       "me",
@@ -879,7 +939,11 @@
     ],
     "gender": "unisex",
     "why": "An affordable little book light for late-night chapters.",
-    "image": "https://images-na.ssl-images-amazon.com/images/P/B0CFVPVQ23.01._SCLZZZZZZZ_.jpg"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B0CFVPVQ23.01._SCLZZZZZZZ_.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B002YO3ZZM",
@@ -889,7 +953,8 @@
     "budget": "25",
     "vibes": [
       "cozy",
-      "foodie"
+      "foodie",
+      "reader"
     ],
     "recipients": [
       "me",
@@ -939,7 +1004,10 @@
     ],
     "gender": "unisex",
     "why": "A quiet diffuser with soft color lights for calmer evenings.",
-    "image": "https://images-na.ssl-images-amazon.com/images/P/B01MR4Y0CZ.01._SCLZZZZZZZ_.jpg"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B01MR4Y0CZ.01._SCLZZZZZZZ_.jpg",
+    "occasions": [
+      "house"
+    ]
   },
   {
     "id": "B0FX3JQ1XX",
@@ -980,7 +1048,11 @@
     ],
     "gender": "unisex",
     "why": "A tough, classic beanie that pretty much anyone will wear all winter.",
-    "image": "assets/products/B002G9UEFY.jpg"
+    "image": "assets/products/B002G9UEFY.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B07YNCY36R",
@@ -1001,7 +1073,11 @@
     ],
     "gender": "unisex",
     "why": "A beanie with a built-in light for late dog walks or looking under the sink.",
-    "image": "assets/products/B07YNCY36R.jpg"
+    "image": "assets/products/B07YNCY36R.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B0H34FH728",
@@ -1120,7 +1196,10 @@
     ],
     "gender": "unisex",
     "why": "Twelve dessert-inspired cocoa cups, ready for a cozy night in.",
-    "image": "assets/products/B0F5JY9F1T.jpg"
+    "image": "assets/products/B0F5JY9F1T.jpg",
+    "occasions": [
+      "holiday"
+    ]
   },
   {
     "id": "B01BDI89SW",
@@ -1140,7 +1219,11 @@
     ],
     "gender": "unisex",
     "why": "A classic mixed chocolate box that still feels like a real treat.",
-    "image": "assets/products/B01BDI89SW.jpg"
+    "image": "assets/products/B01BDI89SW.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B088MCPGTH",
@@ -1219,7 +1302,11 @@
     ],
     "gender": "unisex",
     "why": "The classic Anthora-style coffee cup, for people who romanticize mornings.",
-    "image": "assets/products/B0017YZAYO.jpg"
+    "image": "assets/products/B0017YZAYO.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B0FC2LFYFR",
@@ -1240,7 +1327,10 @@
     ],
     "gender": "unisex",
     "why": "Big, handsome ceramic mugs made for slow coffee and both hands.",
-    "image": "https://images-na.ssl-images-amazon.com/images/P/B0FC2LFYFR.01._SCLZZZZZZZ_.jpg"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B0FC2LFYFR.01._SCLZZZZZZZ_.jpg",
+    "occasions": [
+      "house"
+    ]
   },
   {
     "id": "B00151WA06",
@@ -1414,7 +1504,11 @@
     ],
     "gender": "unisex",
     "why": "A tiny frother that makes weekday coffee feel café-adjacent.",
-    "image": "assets/products/B09TT9TFSN.jpg"
+    "image": "assets/products/B09TT9TFSN.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B087RQZ3GH",
@@ -1476,7 +1570,10 @@
     ],
     "gender": "unisex",
     "why": "A mug-and-warmer set that keeps coffee hot through the whole meeting.",
-    "image": "https://images-na.ssl-images-amazon.com/images/P/B07G9J4745.01._SCLZZZZZZZ_.jpg"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B07G9J4745.01._SCLZZZZZZZ_.jpg",
+    "occasions": [
+      "house"
+    ]
   },
   {
     "id": "B0047BIWSK",
@@ -1793,7 +1890,10 @@
     ],
     "gender": "unisex",
     "why": "A leak-resistant travel mug from the brand coffee people trust.",
-    "image": "assets/products/B00HYOGUKY.jpg"
+    "image": "assets/products/B00HYOGUKY.jpg",
+    "occasions": [
+      "house"
+    ]
   },
   {
     "id": "0593836324",
@@ -1802,7 +1902,8 @@
     "approxPrice": 19,
     "budget": "25",
     "vibes": [
-      "foodie"
+      "foodie",
+      "reader"
     ],
     "recipients": [
       "me",
@@ -1821,7 +1922,8 @@
     "approxPrice": 13,
     "budget": "15",
     "vibes": [
-      "foodie"
+      "foodie",
+      "reader"
     ],
     "recipients": [
       "me",
@@ -1962,8 +2064,7 @@
     "approxPrice": 30,
     "budget": "50",
     "vibes": [
-      "outdoors",
-      "kid"
+      "outdoors"
     ],
     "recipients": [
       "kid",
@@ -2050,7 +2151,11 @@
     ],
     "gender": "unisex",
     "why": "Compression cubes that make a suitcase feel twice as big.",
-    "image": "https://images-na.ssl-images-amazon.com/images/P/B081JS6YDV.01._SCLZZZZZZZ_.jpg"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B081JS6YDV.01._SCLZZZZZZZ_.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B0D6HLTDMZ",
@@ -2135,7 +2240,8 @@
     "approxPrice": 47,
     "budget": "50",
     "vibes": [
-      "outdoors"
+      "outdoors",
+      "fitness"
     ],
     "recipients": [
       "me",
@@ -2281,7 +2387,11 @@
     ],
     "gender": "unisex",
     "why": "Plug it in and any TV suddenly has the apps everyone actually uses.",
-    "image": "assets/products/B0DJGDC3BD.jpg"
+    "image": "assets/products/B0DJGDC3BD.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B0G4XRP464",
@@ -2400,7 +2510,11 @@
     ],
     "gender": "unisex",
     "why": "Two pocket power banks, because one always ends up in the other bag.",
-    "image": "https://images-na.ssl-images-amazon.com/images/P/B083VRD7CX.01._SCLZZZZZZZ_.jpg"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B083VRD7CX.01._SCLZZZZZZZ_.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B08VH86B3G",
@@ -2620,7 +2734,11 @@
     ],
     "gender": "unisex",
     "why": "A portable fan for desks, strollers, and too-warm rooms.",
-    "image": "assets/products/B085L71L9R.jpg"
+    "image": "assets/products/B085L71L9R.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B07QK9C9KT",
@@ -2641,7 +2759,11 @@
     ],
     "gender": "unisex",
     "why": "A quiet handheld fan that’s a summer-and-travel essential.",
-    "image": "https://images-na.ssl-images-amazon.com/images/P/B07QK9C9KT.01._SCLZZZZZZZ_.jpg"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B07QK9C9KT.01._SCLZZZZZZZ_.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B0CWR6RB2D",
@@ -2764,7 +2886,12 @@
     ],
     "gender": "unisex",
     "why": "Catan’s trading fun, shrunk into a travel-size card game.",
-    "image": "assets/products/B0GKBJSPBS.jpg"
+    "image": "assets/products/B0GKBJSPBS.jpg",
+    "occasions": [
+      "santa",
+      "thanks",
+      "birthday"
+    ]
   },
   {
     "id": "B07RDDCKZB",
@@ -2784,7 +2911,12 @@
     ],
     "gender": "unisex",
     "why": "Pocket-size UNO for restaurants, planes, and five-minute breaks.",
-    "image": "https://images-na.ssl-images-amazon.com/images/P/B07RDDCKZB.01._SCLZZZZZZZ_.jpg"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B07RDDCKZB.01._SCLZZZZZZZ_.jpg",
+    "occasions": [
+      "santa",
+      "thanks",
+      "birthday"
+    ]
   },
   {
     "id": "1932188126",
@@ -2805,7 +2937,11 @@
     ],
     "gender": "unisex",
     "why": "A speedy, tile-spelling classic that doesn’t need a board.",
-    "image": "assets/products/1932188126.jpg"
+    "image": "assets/products/1932188126.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B08CZZJ3Y9",
@@ -2952,7 +3088,8 @@
     "budget": "25",
     "vibes": [
       "collector",
-      "cozy"
+      "cozy",
+      "creative"
     ],
     "recipients": [
       "me",
@@ -2963,7 +3100,10 @@
     ],
     "gender": "unisex",
     "why": "A cheerful little LEGO plant that never needs watering.",
-    "image": "assets/products/B0DRW6C2RF.jpg"
+    "image": "assets/products/B0DRW6C2RF.jpg",
+    "occasions": [
+      "birthday"
+    ]
   },
   {
     "id": "B0G2T1VJH5",
@@ -2973,7 +3113,8 @@
     "budget": "50",
     "vibes": [
       "collector",
-      "gamer"
+      "gamer",
+      "creative"
     ],
     "recipients": [
       "me",
@@ -2984,7 +3125,10 @@
     ],
     "gender": "unisex",
     "why": "A displayable Hogwarts crest build — catnip for Potter fans.",
-    "image": "assets/products/B0G2T1VJH5.jpg"
+    "image": "assets/products/B0G2T1VJH5.jpg",
+    "occasions": [
+      "birthday"
+    ]
   },
   {
     "id": "B0C7KQ3WHK",
@@ -2994,7 +3138,8 @@
     "budget": "50",
     "vibes": [
       "collector",
-      "cozy"
+      "cozy",
+      "reader"
     ],
     "recipients": [
       "me",
@@ -3015,7 +3160,8 @@
     "vibes": [
       "collector",
       "cozy",
-      "gamer"
+      "gamer",
+      "creative"
     ],
     "recipients": [
       "me",
@@ -3024,7 +3170,10 @@
     ],
     "gender": "unisex",
     "why": "A sparkling Ghibli puzzle that’s as pretty on the wall as it is to finish.",
-    "image": "assets/products/B06XXNGZRR.jpg"
+    "image": "assets/products/B06XXNGZRR.jpg",
+    "occasions": [
+      "birthday"
+    ]
   },
   {
     "id": "B0G1CNFF6W",
@@ -3034,7 +3183,9 @@
     "budget": "25",
     "vibes": [
       "collector",
-      "cozy"
+      "cozy",
+      "reader",
+      "creative"
     ],
     "recipients": [
       "me",
@@ -3053,7 +3204,8 @@
     "budget": "50",
     "vibes": [
       "collector",
-      "cozy"
+      "cozy",
+      "creative"
     ],
     "recipients": [
       "me",
@@ -3073,7 +3225,8 @@
     "budget": "50",
     "vibes": [
       "collector",
-      "cozy"
+      "cozy",
+      "creative"
     ],
     "recipients": [
       "me",
@@ -3092,7 +3245,8 @@
     "budget": "25",
     "vibes": [
       "collector",
-      "cozy"
+      "cozy",
+      "creative"
     ],
     "recipients": [
       "me",
@@ -3112,7 +3266,8 @@
     "budget": "15",
     "vibes": [
       "collector",
-      "gamer"
+      "gamer",
+      "creative"
     ],
     "recipients": [
       "kid",
@@ -3132,7 +3287,8 @@
     "vibes": [
       "tech",
       "gamer",
-      "collector"
+      "collector",
+      "creative"
     ],
     "recipients": [
       "me",
@@ -3172,7 +3328,8 @@
     "budget": "50",
     "vibes": [
       "collector",
-      "cozy"
+      "cozy",
+      "creative"
     ],
     "recipients": [
       "me",
@@ -3182,7 +3339,10 @@
     ],
     "gender": "unisex",
     "why": "A custom hometown puzzle that’s personal without being cheesy.",
-    "image": "assets/products/B00LLDPQ22.jpg"
+    "image": "assets/products/B00LLDPQ22.jpg",
+    "occasions": [
+      "birthday"
+    ]
   },
   {
     "id": "1452177937",
@@ -3192,7 +3352,8 @@
     "budget": "25",
     "vibes": [
       "collector",
-      "cozy"
+      "cozy",
+      "reader"
     ],
     "recipients": [
       "me",
@@ -3252,7 +3413,8 @@
     "budget": "50",
     "vibes": [
       "cozy",
-      "collector"
+      "collector",
+      "creative"
     ],
     "recipients": [
       "me",
@@ -3273,7 +3435,9 @@
     "budget": "15",
     "vibes": [
       "cozy",
-      "collector"
+      "collector",
+      "reader",
+      "creative"
     ],
     "recipients": [
       "me",
@@ -3293,7 +3457,9 @@
     "budget": "15",
     "vibes": [
       "collector",
-      "cozy"
+      "cozy",
+      "reader",
+      "creative"
     ],
     "recipients": [
       "me",
@@ -3303,7 +3469,11 @@
     ],
     "gender": "unisex",
     "why": "A beautifully simple Japanese notebook that makes writing feel special.",
-    "image": "assets/products/B003CT47ZU.jpg"
+    "image": "assets/products/B003CT47ZU.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B0DKN81Z9X",
@@ -3362,7 +3532,11 @@
     ],
     "gender": "unisex",
     "why": "A recipe a day, all year — the calendar people actually flip.",
-    "image": "assets/products/1523530529.jpg"
+    "image": "assets/products/1523530529.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B0866XSSM9",
@@ -3591,7 +3765,11 @@
     ],
     "gender": "unisex",
     "why": "A visual timer that makes ‘five more minutes’ actually make sense.",
-    "image": "assets/products/B0BK2J71M1.jpg"
+    "image": "assets/products/B0BK2J71M1.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
   },
   {
     "id": "B07X3V3FG1",
@@ -3601,7 +3779,8 @@
     "budget": "15",
     "vibes": [
       "collector",
-      "cozy"
+      "cozy",
+      "creative"
     ],
     "recipients": [
       "me",
@@ -3870,7 +4049,8 @@
     "budget": "50",
     "vibes": [
       "outdoors",
-      "cozy"
+      "cozy",
+      "fitness"
     ],
     "recipients": [
       "me",
@@ -3888,7 +4068,8 @@
     "approxPrice": 70,
     "budget": "100",
     "vibes": [
-      "outdoors"
+      "outdoors",
+      "fitness"
     ],
     "recipients": [
       "me",
@@ -3955,5 +4136,192 @@
     "gender": "unisex",
     "why": "A cooler take on the Croc — still easy, a little more dressed.",
     "image": "assets/products/B0BX4WHTG8.jpg"
+  },
+  {
+    "id": "B00006JSUA",
+    "asin": "B00006JSUA",
+    "name": "Lodge Pre-Seasoned Cast Iron Skillet, 10.25 Inch",
+    "approxPrice": 25,
+    "budget": "25",
+    "vibes": [
+      "foodie"
+    ],
+    "recipients": [
+      "me",
+      "friend",
+      "partner",
+      "parent"
+    ],
+    "gender": "unisex",
+    "why": "The skillet people hand down. Season it once and it only gets better.",
+    "image": "assets/products/B00006JSUA.jpg"
+  },
+  {
+    "id": "0735211299",
+    "asin": "0735211299",
+    "name": "Atomic Habits by James Clear",
+    "approxPrice": 16,
+    "budget": "25",
+    "vibes": [
+      "reader"
+    ],
+    "recipients": [
+      "me",
+      "friend",
+      "partner",
+      "parent",
+      "coworker"
+    ],
+    "gender": "unisex",
+    "why": "The habit book people actually finish — and then lend out.",
+    "image": "assets/products/0735211299.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
+  },
+  {
+    "id": "B00U26V4VQ",
+    "asin": "B00U26V4VQ",
+    "name": "CATAN Board Game",
+    "approxPrice": 48,
+    "budget": "50",
+    "vibes": [
+      "gamer"
+    ],
+    "recipients": [
+      "me",
+      "friend",
+      "partner",
+      "parent",
+      "kid"
+    ],
+    "gender": "unisex",
+    "why": "Trade, build, and argue cheerfully. A classic for game night.",
+    "image": "assets/products/B00U26V4VQ.jpg",
+    "occasions": [
+      "birthday"
+    ]
+  },
+  {
+    "id": "B09B8V1LZ3",
+    "asin": "B09B8V1LZ3",
+    "name": "Amazon Echo Dot",
+    "approxPrice": 50,
+    "budget": "50",
+    "vibes": [
+      "tech",
+      "cozy"
+    ],
+    "recipients": [
+      "me",
+      "friend",
+      "partner",
+      "parent",
+      "coworker"
+    ],
+    "gender": "unisex",
+    "why": "A small speaker that handles timers, music, and the weather without fuss.",
+    "image": "assets/products/B09B8V1LZ3.jpg"
+  },
+  {
+    "id": "0525559477",
+    "asin": "0525559477",
+    "name": "The Midnight Library by Matt Haig",
+    "approxPrice": 15,
+    "budget": "15",
+    "vibes": [
+      "reader"
+    ],
+    "recipients": [
+      "me",
+      "friend",
+      "partner",
+      "parent"
+    ],
+    "gender": "unisex",
+    "why": "A novel about the lives you didn’t live. Easy to start, hard to put down.",
+    "image": "assets/products/0525559477.jpg"
+  },
+  {
+    "id": "0062316095",
+    "asin": "0062316095",
+    "name": "Sapiens by Yuval Noah Harari",
+    "approxPrice": 22,
+    "budget": "25",
+    "vibes": [
+      "reader"
+    ],
+    "recipients": [
+      "me",
+      "friend",
+      "partner",
+      "parent"
+    ],
+    "gender": "unisex",
+    "why": "A big, readable history of our species — the book people press into your hands.",
+    "image": "assets/products/0062316095.jpg"
+  },
+  {
+    "id": "1501161938",
+    "asin": "1501161938",
+    "name": "The Seven Husbands of Evelyn Hugo by Taylor Jenkins Reid",
+    "approxPrice": 17,
+    "budget": "25",
+    "vibes": [
+      "reader"
+    ],
+    "recipients": [
+      "me",
+      "friend",
+      "partner"
+    ],
+    "gender": "unisex",
+    "why": "Old Hollywood, a juicy secret, and a novel people stay up to finish.",
+    "image": "assets/products/1501161938.jpg"
+  },
+  {
+    "id": "0143126563",
+    "asin": "0143126563",
+    "name": "Getting Things Done by David Allen",
+    "approxPrice": 18,
+    "budget": "25",
+    "vibes": [
+      "reader"
+    ],
+    "recipients": [
+      "me",
+      "friend",
+      "parent",
+      "coworker"
+    ],
+    "gender": "unisex",
+    "why": "The calm, practical system for people whose brains have too many tabs open.",
+    "image": "assets/products/0143126563.jpg",
+    "occasions": [
+      "santa",
+      "thanks"
+    ]
+  },
+  {
+    "id": "B000GAYQKY",
+    "asin": "B000GAYQKY",
+    "name": "Casio G-Shock DW5600 Men's Watch",
+    "approxPrice": 56,
+    "budget": "100",
+    "vibes": [
+      "outdoors",
+      "collector"
+    ],
+    "recipients": [
+      "me",
+      "friend",
+      "partner",
+      "parent",
+      "coworker"
+    ],
+    "gender": "him",
+    "why": "The tough little square watch that survives whatever the week throws at it.",
+    "image": "assets/products/B000GAYQKY.jpg"
   }
 ]

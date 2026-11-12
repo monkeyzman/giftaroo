@@ -432,6 +432,26 @@ MORE = [
      "A no-electricity bidet seat: surprisingly great, and they’ll use it every day."),
     ("B0BX4WHTG8", "Crocs Dylan Clog", 55, ["cozy", "outdoors"], ["me", "friend", "partner"],
      "A cooler take on the Croc — still easy, a little more dressed."),
+
+    # Verified against live Amazon pages (titles checked) before inclusion.
+    ("B00006JSUA", "Lodge Pre-Seasoned Cast Iron Skillet, 10.25 Inch", 25, ["foodie"], ["me", "friend", "partner", "parent"],
+     "The skillet people hand down. Season it once and it only gets better."),
+    ("0735211299", "Atomic Habits by James Clear", 16, ["reader"], ["me", "friend", "partner", "parent", "coworker"],
+     "The habit book people actually finish — and then lend out."),
+    ("B00U26V4VQ", "CATAN Board Game", 48, ["gamer"], ["me", "friend", "partner", "parent", "kid"],
+     "Trade, build, and argue cheerfully. A classic for game night."),
+    ("B09B8V1LZ3", "Amazon Echo Dot", 50, ["tech", "cozy"], ["me", "friend", "partner", "parent", "coworker"],
+     "A small speaker that handles timers, music, and the weather without fuss."),
+    ("0525559477", "The Midnight Library by Matt Haig", 15, ["reader"], ["me", "friend", "partner", "parent"],
+     "A novel about the lives you didn’t live. Easy to start, hard to put down."),
+    ("0062316095", "Sapiens by Yuval Noah Harari", 22, ["reader"], ["me", "friend", "partner", "parent"],
+     "A big, readable history of our species — the book people press into your hands."),
+    ("1501161938", "The Seven Husbands of Evelyn Hugo by Taylor Jenkins Reid", 17, ["reader"], ["me", "friend", "partner"],
+     "Old Hollywood, a juicy secret, and a novel people stay up to finish."),
+    ("0143126563", "Getting Things Done by David Allen", 18, ["reader"], ["me", "friend", "parent", "coworker"],
+     "The calm, practical system for people whose brains have too many tabs open."),
+    ("B000GAYQKY", "Casio G-Shock DW5600 Men's Watch", 56, ["outdoors", "collector"], ["me", "friend", "partner", "parent", "coworker"],
+     "The tough little square watch that survives whatever the week throws at it."),
 ]
 
 def budget_for(price: float) -> str:
@@ -474,6 +494,7 @@ HER = {
 HIM = {
     "B00JUM59Z0",  # Hanes Men's zip hoodie
     "B0D7NK9CQT",  # Coach Men's leather gloves
+    "B000GAYQKY",  # Casio G-Shock men's watch
 }
 
 
@@ -488,6 +509,52 @@ def gender_for(asin: str, name: str) -> str:
     if "men's" in folded or "for him" in folded:
         return "him"
     return "unisex"
+
+READER_WORDS = (
+    "book", "postcard", "reading light", "notebook", "coloring",
+    "book nook", "cookbook", "journal",
+)
+FITNESS_WORDS = ("jogger", "gym", "nike", "athletic", "dri-fit", "fitness")
+CREATIVE_WORDS = (
+    "paint", "watercolor", "lego", "draw", "notebook", "pen pouch", "coloring", "puzzle",
+)
+
+
+def _add(items, value):
+    if value not in items:
+        items.append(value)
+
+
+def enrich(row):
+    name = row["name"].lower().replace("’", "'").replace("‘", "'")
+    vibes = [v for v in row.get("vibes", []) if v != "kid"]
+    if any(word in name for word in READER_WORDS):
+        _add(vibes, "reader")
+    if any(word in name for word in FITNESS_WORDS):
+        _add(vibes, "fitness")
+    if any(word in name for word in CREATIVE_WORDS):
+        _add(vibes, "creative")
+    row["vibes"] = vibes
+    if "kid" in name and "kid" not in row["recipients"]:
+        row["recipients"].append("kid")
+    occasions = []
+    if any(word in name for word in ("holiday", "christmas", "cocoa", "hot chocolate", "gingerbread")):
+        occasions.append("holiday")
+    if any(word in name for word in ("candle", "blanket", "mug", "slippers", "diffuser")):
+        occasions.append("house")
+    if "coworker" in row["recipients"] and row["approxPrice"] <= 25:
+        occasions.extend(["santa", "thanks"])
+    if any(word in name for word in ("lego", "game", "puzzle", "uno")):
+        occasions.append("birthday")
+    # de-dupe, keep order
+    seen = []
+    for occ in occasions:
+        if occ not in seen:
+            seen.append(occ)
+    if seen:
+        row["occasions"] = seen
+    return row
+
 
 def main():
     rows = []
@@ -537,6 +604,7 @@ def main():
             "why": why,
             "image": image,
         })
+        rows[-1] = enrich(rows[-1])
 
     out = Path(__file__).resolve().parents[1] / "data" / "products.json"
     out.write_text(json.dumps(rows, indent=2, ensure_ascii=False) + "\n")

@@ -14,6 +14,7 @@
 </head>
 <body>
   <a class="skip-link" href="#app">Skip to content</a>
+  <div id="live" class="sr-only" aria-live="polite"></div>
   <div class="page-bg" aria-hidden="true"></div>
   <div class="snow" id="snow" hidden aria-hidden="true"></div>
   <div class="app" id="app">
@@ -23,6 +24,12 @@
         <span class="brand-name" data-brand>Giftaroo</span>
       </button>
       <div class="top-actions">
+        <button type="button" class="icon-btn" id="savedBtn" aria-label="Saved gifts and recent reveals">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="none" stroke="currentColor" stroke-width="1.7" d="M12 20s-7-4.4-7-9a4 4 0 017-2 4 4 0 017 2c0 4.6-7 9-7 9z"/>
+          </svg>
+          <span class="badge" id="savedCount" hidden>0</span>
+        </button>
         <button type="button" class="icon-btn" id="muteBtn" aria-pressed="false" aria-label="Mute sounds">
           <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true">
             <path fill="currentColor" d="M4 9.5h3.2L12 5v14l-4.8-4.5H4z"/>
@@ -64,6 +71,10 @@
         <p class="share-miss" id="shareMiss" hidden>That surprise link doesn’t match a gift we have. Make your own instead.</p>
         <button type="button" class="btn btn-primary btn-juicy" id="startBtn">Unwrap a gift</button>
         <button type="button" class="btn btn-secondary btn-santa" id="secretSantaBtn" hidden>Secret Santa</button>
+        <div class="recent" id="recentBlock" hidden>
+          <p class="eyebrow">Recently unwrapped</p>
+          <div class="recent-row" id="recentRow"></div>
+        </div>
         <ol class="how">
           <li><span>1</span>Choose a budget and a vibe</li>
           <li><span>2</span>Tap the box to unwrap it</li>
@@ -87,6 +98,38 @@
           <button type="button" class="btn btn-ghost" id="backStepBtn">Back</button>
           <button type="button" class="btn btn-primary" id="nextStepBtn" disabled>Continue</button>
         </div>
+      </section>
+
+      <!-- PRESENT (recipient) -->
+      <section class="view view-present" id="view-present" aria-label="A gift for you" hidden>
+        <p class="eyebrow">For you</p>
+        <h1 id="presentTitle">A gift is waiting</h1>
+        <p class="present-from" id="presentFrom"></p>
+        <blockquote class="note-card" id="presentNote" hidden></blockquote>
+        <p class="lede">It’s wrapped and sealed. The good part is opening it.</p>
+        <button type="button" class="btn btn-primary btn-juicy" id="openPresentBtn">Open your gift</button>
+      </section>
+
+      <!-- GROUP -->
+      <section class="view view-sack" id="view-sack" aria-label="Group gifts" hidden>
+        <p class="eyebrow" id="sackEyebrow">The group</p>
+        <h2 id="sackTitle">A gift for each of them</h2>
+        <p class="step-sub" id="sackSub"></p>
+        <div class="sack" id="sackList"></div>
+        <button type="button" class="btn btn-ghost" id="sackBack">Edit the list</button>
+      </section>
+
+      <!-- SAVED -->
+      <section class="view view-saved" id="view-saved" aria-label="Saved gifts" hidden>
+        <p class="eyebrow">Your shelf</p>
+        <h2>Saved and recent</h2>
+        <div class="tabs" role="tablist" aria-label="Saved or recent">
+          <button type="button" class="tab is-on" id="tabSaved" role="tab" aria-selected="true">Saved</button>
+          <button type="button" class="tab" id="tabRecent" role="tab" aria-selected="false">Recent</button>
+        </div>
+        <div class="shelf" id="shelf"></div>
+        <p class="step-sub" id="shelfEmpty" hidden></p>
+        <button type="button" class="btn btn-ghost" id="shelfBack">Back</button>
       </section>
 
       <!-- WRAP -->
@@ -128,9 +171,14 @@
           <p class="product-price" id="productPrice"></p>
           <h2 id="productName"></h2>
           <p class="product-why" id="productWhy"></p>
+          <button type="button" class="heart" id="favBtn" aria-pressed="false" aria-label="Save this gift">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 20s-7-4.4-7-9a4 4 0 017-2 4 4 0 017 2c0 4.6-7 9-7 9z"/></svg>
+          </button>
         </article>
         <a class="btn btn-primary btn-amazon" id="amazonBtn" target="_blank" rel="noopener noreferrer sponsored">Get it on Amazon</a>
         <button type="button" class="btn btn-secondary" id="shareBtn">Send the surprise</button>
+        <button type="button" class="btn btn-secondary" id="shareCardBtn">Share a card</button>
+        <p class="share-status" id="cardStatus" role="status"></p>
         <div class="share-sheet" id="shareSheet" hidden>
           <p class="share-title">Send the surprise</p>
           <label class="field">Your name <span>(optional)</span>
@@ -143,7 +191,8 @@
           <p class="share-status" id="shareStatus" role="status"></p>
           <input class="share-url" id="shareUrl" readonly hidden aria-label="Surprise link" />
         </div>
-        <button type="button" class="btn btn-secondary" id="rerollBtn">Try one more (free reroll)</button>
+        <button type="button" class="btn btn-secondary" id="rerollBtn">Shake the box again</button>
+        <button type="button" class="btn btn-secondary" id="backGroupBtn" hidden>Back to the group</button>
         <button type="button" class="btn btn-secondary" id="makeOwnBtn" hidden>Make your own mystery gift</button>
         <button type="button" class="btn btn-ghost" id="againBtn">Start over</button>
       </section>
